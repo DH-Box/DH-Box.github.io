@@ -1,0 +1,18 @@
+---
+layout: dhbox_default
+title: Contact | DH Box
+---
+
+<div id="home">
+  <h1>Contact</h1>
+  <div id="content">
+
+  {% for member in site.data.contact %}
+
+      {{ member.label }}: <a href="{{ member.urlbase }}{{ member.value }}" target="_blank">{{ member.description }}</a>
+
+    <br />
+
+  {% endfor  %}
+
+</div>

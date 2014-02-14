@@ -1,0 +1,23 @@
+/*****************************************************************************/
+/*
+/* Custom
+/*
+/*****************************************************************************/
+
+.footer {
+  font-size: 85%;
+  color: #333;
+}
+
+.backtotop {
+  font-size: 125%;;  
+}
+
+.backtotop a, a.hover, a.visited {
+  text-decoration: none;
+  color: #333;
+}
+
+.credits {
+   text-decoration: none;
+}

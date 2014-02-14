@@ -1,0 +1,32 @@
+- service: Email
+  display: true
+  use_generic_url_base: true
+  custom_url_base: 
+  use_default_image: true
+  custom_image_url: 
+
+- service: Twitter
+  display: true
+  handle: DH_Box
+  use_generic_url_base: true
+  custom_url_base: 
+  use_default_image: true
+  custom_image_url:
+
+- service: GitHub
+  display: true
+  handle: szweibel/dhbox
+  use_generic_url_base: true
+  custom_url_base: 
+  use_default_image: true
+  custom_image_url: 
+
+- service: Tumblr
+  display: false
+  handle:
+  use_generic_url_base: true
+  custom_url_base:
+  use_default_image: true
+  custom_image_url: 
+  display: true
+

@@ -1,0 +1,24 @@
+name: Simple Jekyll Bootstrap Theme
+markdown: redcarpet
+pygments: true
+
+paginate: 5
+paginate_path: "page:num"
+timezone: America/New_York
+
+# custom configuration
+jekyll_url: http://jekyllrb.com
+my_email: hello@harlankellaway.com
+my_tagline: A Jekyll Theme based on Start Bootstrap's One-Page-Wonder
+my_site_author_name: H Kellaway
+my_site_author_url: http://hkellaway.github.io
+my_license: Licensed under Apache License v2.0
+my_license_url: http://apache.org/licenses/LICENSE-2.0
+my_template: Original Theme  by Start Bootstrap
+my_template_url: http://startbootstrap.com/
+
+my_label_toggle_navigation: Toggle Navigation
+my_label_findoutmore: Find Out More
+
+is_site_author_displayed: true
+is_copyright_displayed: false
