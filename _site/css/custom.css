@@ -4,20 +4,42 @@
 /*
 /*****************************************************************************/
 
+.headline > .container > h3 {
+        background: #ffffff;
+        background: rgba(255, 255, 255, 0.9);
+}
+
 .footer {
-  font-size: 85%;
   color: #333;
 }
 
-.backtotop {
-  font-size: 125%;;  
+.footer a, a.hover, a.visited {
+  color: #333;
+  text-decoration: underline;
+}
+
+.footer .socialmedia {
+  text-align: right;
+  text-decoration: none;
+}
+
+.footer .socialmedia a {
+  text-decoration: none;
 }
 
 .backtotop a, a.hover, a.visited {
   text-decoration: none;
-  color: #333;
+}
+
+.footer .socialmedia {
+  text-align: right;
 }
 
 .credits {
-   text-decoration: none;
+   font-size: 85%;
+}
+
+.myicon {
+  width: 32px;
+  height: 32px;
 }

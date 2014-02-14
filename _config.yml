@@ -15,10 +15,17 @@ my_template_url: http://startbootstrap.com/
 my_label_toggle_navigation: Toggle Navigation
 my_label_findoutmore: Find Out More
 
+my_label_socialmedia: Connect&#58;
+my_delimiter_socialmedia: //
+
+is_socialmedia_widget_displayed: true
 is_github_ribbon_displayed: true
+use_default_socialmedia_icons: true
 is_site_author_displayed: true
 is_copyright_displayed: false
 is_blog_pagination_on: true
+ 
+github_ribbon_color: gray # can be blue, orange, gray, green, red
 
 # DO NOT modify these without understanding why
 
@@ -29,7 +36,11 @@ permalink: pretty
 paginate: 5
 paginate_path: "page:num"
 
+my_images_subpath: /images_png/
+my_images_filetype: .png
+my_socialmedia_images_filename_stub: logo_
+
 jekyll_url: http://jekyllrb.com
 github_theme_url: https://github.com/hkellaway/Simple-Jekyll-Bootstrap-Theme
 github_ribbon_image_stub: github_ribbon_
-github_ribbon_color: gray
+bootstrap_icons_cdn_url: //netdna.boostrapcdn.com/twitter-bootstrap/2.3.1/css/boostrap-combined.no-icons.min.css

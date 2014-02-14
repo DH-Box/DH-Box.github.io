@@ -1,5 +1,11 @@
  <div class="footer">
 
+   {% if site.is_socialmedia_widget_displayed %}
+
+     {% include /widgets/socialmedia.html %}
+
+   {% endif %}
+
    <div class="backtotop">
  
      <a href="/#">Back to Top</a> &uarr;

@@ -1,32 +1,35 @@
-- service: Email
-  display: true
-  use_generic_url_base: true
-  custom_url_base: 
-  use_default_image: true
+- name: Email
+  is_displayed: true
+  url_base: mailto&#58;
+  handle: hkellaway@users.noreply.github.com
   custom_image_url: 
 
-- service: Twitter
-  display: true
-  handle: DH_Box
-  use_generic_url_base: true
-  custom_url_base: 
-  use_default_image: true
-  custom_image_url:
+- name: Twitter
+  is_displayed: true
+  url_base: http://twitter.com/
+  handle: DigiHumanatee
 
-- service: GitHub
-  display: true
-  handle: szweibel/dhbox
-  use_generic_url_base: true
-  custom_url_base: 
-  use_default_image: true
-  custom_image_url: 
+- name: GitHub
+  is_displayed: true
+  url_base: http://github.com/
+  handle: hkellaway
 
-- service: Tumblr
-  display: false
-  handle:
-  use_generic_url_base: true
-  custom_url_base:
-  use_default_image: true
-  custom_image_url: 
-  display: true
+- name: LinkedIn
+  is_displayed: true
+  url_base: http://linkedin.com/in/
+  handle: hkellaway
 
+- name: Blog
+  is_displayed: true
+  url_base: /blog/
+  handle: #
+
+- name: Tumblr
+  is_displayed: false
+  urlbase: http://demo.tumblr.com/
+  handle: #
+
+- name: RSS
+  is_displayed: false
+  urlbase: 
+  handle: 

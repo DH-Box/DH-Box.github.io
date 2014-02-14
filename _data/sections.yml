@@ -21,6 +21,6 @@
   link_label: About Me
   display_findoutmore_url: true
   findoutmore_url: /blog
-  description: I'm a developer who needed to build aa website for a project using Jekyll and Bootstrap. I kept looking for something like this and couldn't find it - so I decided to make it! What's special about this version is that you don't even need to touch code to customize what this fancy page looks like. Feel free to re-use (with respect to the original designers' license). I also love cats.
+  description: I'm a developer who needed to build a website for a project using Jekyll and Bootstrap. I kept looking for something like this and couldn't find it - so I decided to make it! What's special about this version is that you don't even need to touch code to customize what this fancy page looks like. Feel free to re-use (with respect to the original designers' license). Also, I love cats.
   image_url: http://placekitten.com/500/500
   image_alignment: right
