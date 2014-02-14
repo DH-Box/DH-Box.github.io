@@ -1,0 +1,39 @@
+ <div class="footer">
+
+   <div class="backtotop">
+ 
+     <a href="/#">Back to Top</a> &uarr;
+
+   </div>
+
+   <br />
+
+   <div class="credits">
+
+     <a href="{{ site.jekyll_url }}" target="_blank">Jekyll</a>-powered Site 
+
+     {% if site.is_site_author_displayed %}
+
+     by <a href="{{ site.my_site_author_url }}" target="_blank">{{ site.my_site_author_name }}</a>
+
+     {% endif %}
+
+     <br />          
+
+     <a href="{{ site.my_template_url }}" target="_blank">{{ site.my_template }} </a>
+
+     <br />
+
+     {% if site.is_copyright_displayed %}
+
+       &copy; {{ site.name }} '{{ site.time | date: '%y' }}
+
+     {% else %}
+
+       <a href="{{ site.my_license_url }}" target="_blank">{{ site.my_license }}</a>
+          
+     {% endif %}
+
+   </div>
+
+</div>

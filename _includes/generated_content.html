@@ -1,0 +1,73 @@
+    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">{{ site.my_label_toggle_navigation }}</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">{{ site.name }}</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+
+                   {% for section in site.data.sections %}
+
+                     {% assign stripped_spaces =  section.link_label | remove: ' ' %}
+                     {% assign link_anchor = stripped_spaces | downcase  %}
+
+                     <li><a href="#{{ link_anchor }}">{{ section.link_label }}</a></li>
+
+                   {% endfor %}
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="header-image">
+
+        <div class="headline">
+            <div class="container">
+                <h1>{{ site.name }}</h1>
+                <h2>{{ site.my_tagline }}</h2>
+            </div>
+        </div>
+
+    </div>
+    <!-- /header-image -->
+
+    <div class="container">
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        {% for section in site.data.sections %}
+
+          {% assign stripped_spaces =  section.link_label | remove: ' ' %}
+          {% assign link_anchor = stripped_spaces | downcase  %}
+
+          <div class="featurette" id="{{ link_anchor }}">
+              <img class="featurette-image img-circle img-responsive pull-{{ section.image_alignment }}" src="{{ section.image_url }}">
+              <h2 class="featurette-heading">{{ section.heading_start }}
+                <span class="text-muted">{{ section.heading_end }}</span>
+              </h2>
+              <p class="lead">{{ section.description }}</p>
+            
+              {% if section.display_findoutmore_url  %}
+
+                <p><a href="{{ section.findoutmore_url }}">{{ site.my_label_findoutmore }}</a></p>
+
+              {% endif %}
+
+          </div>
+
+        <hr class="featurette-divider">
+
+        {% endfor %}
