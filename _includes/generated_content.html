@@ -10,6 +10,17 @@
                 <a class="navbar-brand" href="#">{{ site.name }}</a>
             </div>
 
+            <!-- GitHub Ribbon -->
+            <div id="githubribbon">
+
+              {% if site.is_github_ribbon_displayed %}
+
+                <a href="{{ site.github_theme_url }}"><img style="position: absolute; top: 0; right: 0; border: 0;"  alt="Fork me on GitHub" src="/images/{{ site.github_ribbon_image_stub }}{{ site.github_ribbon_color }}.png"></a>
+
+              {% endif %}
+
+            </div>
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
@@ -71,3 +82,5 @@
         <hr class="featurette-divider">
 
         {% endfor %}
+
+        <!-- END THE FEATURETTES -->
