@@ -3,8 +3,8 @@
 name: Simple Jekyll Bootstrap Theme
 timezone: America/New_York
 
-my_email: hello@harlankellaway.com
-my_tagline: A Jekyll Theme based on Start Bootstrap's One-Page-Wonder
+my_email: hkellaway@users.noreply.github.com
+my_tagline: A simple Bootstrap theme for Jekyll
 my_site_author_name: H Kellaway
 my_site_author_url: http://hkellaway.github.io
 my_license: Licensed under Apache License v2.0
@@ -43,4 +43,7 @@ my_socialmedia_images_filename_stub: logo_
 jekyll_url: http://jekyllrb.com
 github_theme_url: https://github.com/hkellaway/Simple-Jekyll-Bootstrap-Theme
 github_ribbon_image_stub: github_ribbon_
-bootstrap_icons_cdn_url: //netdna.boostrapcdn.com/twitter-bootstrap/2.3.1/css/boostrap-combined.no-icons.min.css
+bootstrap_noicons_cdn_url: //netdna.boostrapcdn.com/twitter-bootstrap/2.3.1/css/boostrap-combined.no-icons.min.css
+bootstrap_fontawesome_icons_cdn_url: //netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css
+
+

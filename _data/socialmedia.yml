@@ -15,9 +15,9 @@
   handle: hkellaway
 
 - name: LinkedIn
-  is_displayed: true
+  is_displayed: false
   url_base: http://linkedin.com/in/
-  handle: hkellaway
+  handle: 
 
 - name: Blog
   is_displayed: true
