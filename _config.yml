@@ -40,10 +40,10 @@ my_images_subpath: /images_png/
 my_images_filetype: .png
 my_socialmedia_images_filename_stub: logo_
 
-jekyll_url: http://jekyllrb.com
+jekyll_url: http://jekyllrb.com/
 github_theme_url: https://github.com/hkellaway/Simple-Jekyll-Bootstrap-Theme
 github_ribbon_image_stub: github_ribbon_
-bootstrap_noicons_cdn_url: //netdna.boostrapcdn.com/twitter-bootstrap/2.3.1/css/boostrap-combined.no-icons.min.css
+bootstrap_noicons_cdn_url: //netdna.boostrapcdn.com/twitter-bootstrap/2.3.1/css/boostrap-combined.no-icons.min.css/
 bootstrap_fontawesome_icons_cdn_url: //netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css
-
-
+icons_url: http://fontawesome.io/
+icons_label: Icons by FontAwesome
