@@ -3,6 +3,12 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    {% if page.url == "/404.html" %}
+
+      <meta http-equiv="refresh" content="5; url=/">
+
+    {% endif %}
+
     <title>{{ page.title }}</title>
 
      <!-- Load Bootstrap and FontAwesome CDN'ed from bootstrapcdn.com -->
