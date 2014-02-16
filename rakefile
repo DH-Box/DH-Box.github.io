@@ -1,0 +1,25 @@
+desc "Delete old website files to start fresh."
+task :clean do
+  puts "Starting fresh!"
+  system "rm -rf _site"
+end
+
+desc "Builds a fresh copy of your site, then opens it."
+task :serve do  
+  system "jekyll build"
+  system "jekyll serve"
+  system "open http://localhost:4000"
+end
+
+desc "Uupdates GitHub."
+# Usage: rake ship "Commit message."
+task :ship do
+  message = ARGV.last
+  task message.to_sym do ; end
+  system "git add -A"
+  system "git commit -am '#{message}'"
+  system "git pull"
+  system "git push"
+  Rake::Task['deploy'].execute
+  puts "Pushed latest to GitHub and deployed to http://#{url_live}."
+end

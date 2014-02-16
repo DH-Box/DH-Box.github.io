@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "How to Publish a Blog Post on Your New Jekyll Site"
+date:   2014-02-13 00:00:00
+published: true
+categories: blog
+tags: jekyll blogging
+---
+
+Want to create blog posts? Simple!
+
+
+1. Copy this file (into _posts)
+2. Re-name the new file so that it has the current date at the start of its file name (in *yyy-mm-dd* format)
+3. Open the new file up and change its attributes -- change *title*, *date*, and *published* to match your post 
+  - (DON'T change the *layout* attribute
+  - The *published* attribute can only have the values *true* or *false*
+  - You can add more categories to the categories section (not recommended), but make sure to keep the *blog* category first!
+4. Rebuild Jekyll and publish to your site
+
+If you prefer writing blog posts in HTML instead of [markdown] (https://www.google.com/?search#q=markdown tutorial), change the extension of your post from *.markdown* to *.html*.
+
+Remember: for a post to be displayed on your blog, the *published* attribute has to be set to *true*.
+
+
+Happy blogging!

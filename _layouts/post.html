@@ -1,9 +1,23 @@
 ---
-layout: default
+layout: blog_posts
+categories: blog
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+{% include header.html %}
+
+<ol class="breadcrumb">
+  <li><a href="/">Home</a></li>
+  <li><a href="/blog">Blog</a></li>
+  <li class=active>{{ page.title }}</li>
+</ol>
 
 <div class="post">
-{{ content }}
+
+<h2>{{ page.title }}</h2>
+
+<p  class="date">{{ page.date | date_to_string }}</p>
+
+  {{ content }}
+
 </div>
+
+{% include footer.html %}

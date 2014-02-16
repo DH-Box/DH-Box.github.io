@@ -1,10 +1,14 @@
 # MODIFY these settings
 
 name: Simple Jekyll Bootstrap Theme
+tagline: A simple Bootstrap theme made with Jekyll
+blog_name: Simple Jekyll Bootstrap Theme
+blog_tagline: has a blog
+blog_includes_related_posts: true
+blog_related_posts_name: Related Posts
 timezone: America/New_York
 
 my_email: hkellaway@users.noreply.github.com
-my_tagline: A simple Bootstrap theme for Jekyll
 my_site_author_name: H Kellaway
 my_site_author_url: http://hkellaway.github.io
 my_license: Licensed under Apache License v2.0
@@ -27,7 +31,7 @@ is_blog_pagination_on: true
  
 github_ribbon_color: gray # can be blue, orange, gray, green, red
 
-# DO NOT modify these without understanding why
+# DO NOT modify these without understanding why - it may have unintended consequences!
 
 markdown: redcarpet
 pygments: true
@@ -36,9 +40,12 @@ permalink: pretty
 paginate: 5
 paginate_path: "page:num"
 
+my_blog_subpath: /blog/
 my_images_subpath: /images_png/
 my_images_filetype: .png
 my_socialmedia_images_filename_stub: logo_
+
+blog_required_categories: blog
 
 jekyll_url: http://jekyllrb.com/
 github_theme_url: https://github.com/hkellaway/Simple-Jekyll-Bootstrap-Theme

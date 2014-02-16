@@ -1,0 +1,30 @@
+    <div class="container">
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        {% for section in site.data.sections %}
+
+          {% assign stripped_spaces =  section.link_label | remove: ' ' %}
+          {% assign link_anchor = stripped_spaces | downcase  %}
+
+          <div class="featurette" id="{{ link_anchor }}">
+              <img class="featurette-image img-circle img-responsive pull-{{ section.image_alignment }}" src="{{ section.image_url }}">
+              <h2 class="featurette-heading">{{ section.heading_start }}
+                <span class="text-muted">{{ section.heading_end }}</span>
+              </h2>
+              <p class="lead">{{ section.description }}</p>
+            
+              {% if section.display_findoutmore_url  %}
+
+                <p><a href="{{ section.findoutmore_url }}">{{ site.my_label_findoutmore }}</a></p>
+
+              {% endif %}
+
+          </div>
+
+        {% endfor %}
+
+        <!-- END THE FEATURETTES -->
+      </div>

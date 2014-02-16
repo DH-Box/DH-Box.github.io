@@ -5,12 +5,40 @@
 /*****************************************************************************/
 
 .headline > .container > h3 {
-        background: #ffffff;
-        background: rgba(255, 255, 255, 0.9);
+  background: #ffffff;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+#blog {
+  margin-left: 80px;
+}
+
+.post {
+  margin-left: 80px;
+}
+
+.post .date {
+  font-style: italic;
+}
+
+.posts {
+  list-style-type: none;
+  margin-bottom: 2em;
+}
+
+.posts li {
+  line-height: 1.75em;
+}
+
+.posts span {
+  color: #666;
+  font-family: Monaco, "Courier New", monospace;
+  font-size: 80%;
 }
 
 .footer {
   color: #333;
+  margin-left: 50px;
 }
 
 .footer a, a.hover, a.visited {

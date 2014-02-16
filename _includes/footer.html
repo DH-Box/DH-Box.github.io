@@ -1,5 +1,7 @@
  <div class="footer">
 
+   <hr>
+
    {% if site.is_socialmedia_widget_displayed %}
 
      {% include /widgets/socialmedia.html %}
@@ -8,7 +10,7 @@
 
    <div class="backtotop">
  
-     <a href="/#">Back to Top</a> &uarr;
+     <a href="{{ page.id }}#">Back to Top</a> &uarr;
 
    </div>
 
@@ -43,8 +45,6 @@
        <a href="{{ site.my_license_url }}" target="_blank">{{ site.my_license }}</a>
           
      {% endif %}
-
-     <a href="{{ site.icons_url }}" target="_blank">{{ site.icons_label }}</a>
 
    </div>
 
