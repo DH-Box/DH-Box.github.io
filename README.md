@@ -3,7 +3,7 @@ Simple-Jekyll-Bootstrap-Theme
 
 A simple [Jekyll] (http://jekyllrb.com/) [Bootstrap] (http://getbootstrap.com) theme customized by GitHub user hkellaway based on the One-Page-Wonder Theme by [Start Bootstrap] (http://startbootstrap/).
 
-**How to Cutomize without Coding**
+#How to Cutomize without Coding
 
 - open up the *_config.yml* and change all of the settings under the sections marked MODIFY these settings
 - save *_config.yml* and close
@@ -14,3 +14,8 @@ A simple [Jekyll] (http://jekyllrb.com/) [Bootstrap] (http://getbootstrap.com) t
 You can see an example of a personalized version of this theme [on my site] (http://hkellaway.github.io/).
 
 Email [hkellaway@users.noreply.github.com] (mailto:hkellaway@users.noreply.github.com?subject=simple-jekyll-bootstrap-theme on github) with questions.
+
+
+#Themes
+
+#Plugins

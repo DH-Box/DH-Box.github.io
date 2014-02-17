@@ -7,9 +7,6 @@ categories: blog
 tags: jekyll blogging
 ---
 
-Want to create blog posts? Simple!
-
-
 1. Copy this file (into _posts)
 2. Re-name the new file so that it has the current date at the start of its file name (in *yyy-mm-dd* format)
 3. Open the new file up and change its attributes -- change *title*, *date*, and *published* to match your post 

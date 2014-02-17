@@ -38,7 +38,7 @@ pygments: true
 
 permalink: pretty
 paginate: 5
-paginate_path: "page:num"
+paginate_path: "blog/page:num"
 
 my_blog_subpath: /blog/
 my_images_subpath: /images_png/
