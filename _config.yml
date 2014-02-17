@@ -4,8 +4,6 @@ name: Simple Jekyll Bootstrap Theme
 tagline: A simple Bootstrap theme made with Jekyll
 blog_name: Simple Jekyll Bootstrap Theme
 blog_tagline: has a blog
-blog_includes_related_posts: true
-blog_related_posts_name: Related Posts
 timezone: America/New_York
 
 my_email: hkellaway@users.noreply.github.com
@@ -15,6 +13,8 @@ my_license: Licensed under Apache License v2.0
 my_license_url: http://apache.org/licenses/LICENSE-2.0
 my_template_name: Original Theme  by Start Bootstrap
 my_template_url: http://startbootstrap.com/
+my_headerimage_url: http://stockvault.net/
+my_headerimage_name: Header image by Stockvault
 
 my_label_toggle_navigation: Toggle Navigation
 my_label_findoutmore: Find Out More
@@ -22,14 +22,15 @@ my_label_findoutmore: Find Out More
 my_label_socialmedia: Connect&#58;
 my_delimiter_socialmedia: //
 
-is_socialmedia_widget_displayed: true
 is_github_ribbon_displayed: true
-use_default_socialmedia_icons: true
 is_site_author_displayed: true
 is_copyright_displayed: false
+is_headerimagecred_displayed: false
 is_blog_pagination_on: true
+is_socialmedia_widget_displayed: true
  
 github_ribbon_color: gray # can be blue, orange, gray, green, red
+github_repo_url: https://github.com/hkellaway/Simple-Jekyll-Bootstrap-Theme
 
 # DO NOT modify these without understanding why - it may have unintended consequences!
 
@@ -43,12 +44,8 @@ paginate_path: "blog/page:num"
 my_blog_subpath: /blog/
 my_images_subpath: /images_png/
 my_images_filetype: .png
-my_socialmedia_images_filename_stub: logo_
-
-blog_required_categories: blog
 
 jekyll_url: http://jekyllrb.com/
-github_theme_url: https://github.com/hkellaway/Simple-Jekyll-Bootstrap-Theme
 github_ribbon_image_stub: github_ribbon_
 bootstrap_noicons_cdn_url: //netdna.boostrapcdn.com/twitter-bootstrap/2.3.1/css/boostrap-combined.no-icons.min.css/
 bootstrap_fontawesome_icons_cdn_url: //netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css

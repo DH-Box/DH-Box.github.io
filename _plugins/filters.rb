@@ -1,3 +1,4 @@
+#Allows <!--more--> to be used in blog posts to truncate length
 module Jekyll
   module PreviewFilter
     def preview(input, url)

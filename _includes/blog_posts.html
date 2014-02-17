@@ -17,18 +17,20 @@
 
        <!-- Pagination links -->
 
-         <ul class="pagination">
+         <ul class="pagination pagination-sm">
 
            {% if paginator.total_pages > 1 %}
 
              {% for page in (1..paginator.total_pages) %}
-               <li>
                  {% if page == paginator.page %}
-                   <a><em>{{ page }}</em></a>
+                   <li class="active">
+                   <a>{{ page }}</a>
                  {% elsif page == 1 %}
+                   <li>
                    <a href="{{ '/blog' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
                  {% else %}
-                   <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+                    <li>
+                    <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
                  {% endif %}
                </li>
              {% endfor %}

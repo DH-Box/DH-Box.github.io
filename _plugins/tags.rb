@@ -1,3 +1,4 @@
+#Allows {% youtube %} tags for embedding video
 module Jekyll
   class YouTubeTag < Liquid::Tag
     def initialize(tag_name, video_url, tokens)

@@ -1,3 +1,4 @@
+#Generates Blog Archive Page
 module Jekyll
   class ArchivesGenerator < Generator
     def generate(site)

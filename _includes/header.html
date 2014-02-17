@@ -63,7 +63,7 @@
                      {% assign stripped_spaces =  section.link_label | remove: ' ' %}
                      {% assign link_anchor = stripped_spaces | downcase  %}
 
-                     <li><a href="#{{ link_anchor }}">{{ section.link_label }}</a></li>
+                     <li><a href="/#{{ link_anchor }}">{{ section.link_label }}</a></li>
 
                    {% endfor %}
 
