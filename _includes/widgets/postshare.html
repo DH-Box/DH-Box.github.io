@@ -1,0 +1,27 @@
+<div class="postshare">
+
+  <div class = "container">
+
+  <table><tbody><tr><td>
+
+  {{ site.my_label_post_share }}
+
+  </td>
+  <td>
+
+      {% for service in site.data.postshare %}
+
+        {% if service.is_displayed %}
+
+          {% assign serviceDowncase = service.name | downcase %}
+
+          <form class="navbar-form navbar-left" onclick="window.open('{{ service.url_base }}')">
+            <button type="submit" class="btn btn-info"><i class="icon icon-{{ serviceDowncase }}"></i> {{ service.name }}</button>
+          </form>
+
+          {% endif %}
+
+        {% endfor %}
+  </td></tr></tbody></table>
+  </div>
+</div>

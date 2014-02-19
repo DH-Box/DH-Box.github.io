@@ -21,6 +21,11 @@
   font-style: italic;
 }
 
+.post .post-print {
+  float: right;
+  margin-right: 120px;
+}
+
 .posts {
   list-style-type: none;
   margin-bottom: 2em;

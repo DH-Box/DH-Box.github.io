@@ -14,10 +14,32 @@ categories: blog
 
 <h2>{{ page.title }}</h2>
 
-<p  class="date">{{ page.date | date_to_string }}</p>
+<div class="postheader">
+
+  <div  class="date">{{ page.date | date_to_string }}
+  </div>
+
+    {% if site.is_blog_printbutton_displayed %}
+
+      <div class="post-print">{% include /widgets/printbutton.html  %}
+      </div>
+
+    {% endif %}
+
+</div>
+
+<br />
 
   {{ content }}
 
+  <br />
+
+  {% if site.is_blog_postshare_displayed %}
+
+    {% include /widgets/postshare.html %}
+
+  {% endif %}
+  
 </div>
 
 {% include footer.html %}

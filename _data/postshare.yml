@@ -1,0 +1,59 @@
+- name: Delicious
+  is_displayed: false
+  url_base: http://delicious.com/
+
+- name: Digg
+  is_displayed: false
+  ur_base: http://digg.com/
+
+- name: Facebook
+  is_displayed: true
+  url_base: http://facebook.com/
+
+- name: Google-Plus
+  is_displayed: true
+  url_base: http://plus.google.com/
+
+- name: Hacker News
+  is_displayed: false
+  url_base: http://news.ycombinator.com/
+
+- name: Instagram
+  is_displayed: false
+  url_base: http://instagram.com/
+
+- name: LinkedIn
+  is_displayed: false
+  url_base: http://linkedin.com/
+
+- name: Pinterest
+  is_displayed: false
+  url_base: http://pinterest.com/
+
+- name: Pocket
+  is_displayed: false
+  url_base: http://pocket.com/
+
+- name: Reddit
+  is_displayed: false
+  url_base: http://reddit.com/
+
+- name: ScoopIt
+  is_displayed: false
+  url_base: http://scoop.it/
+
+- name: StumbleUpon
+  is_displayed: false
+  url_base: http://stumbleupon.com/
+
+- name: Tumblr
+  is_displayed: true
+  url_base: http://tumblr.com
+
+- name: Twitter
+  is_displayed: true
+  url_base: http://twitter.com/
+
+- name: YouTube
+  is_displayed: false
+  url_base: http://youtube.com/

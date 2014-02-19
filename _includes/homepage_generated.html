@@ -1,5 +1,11 @@
     <div class="container">
 
+      {% if site.is_warning_displayed %}
+
+        {% include /widgets/warning.html %}
+
+      {% endif %}
+
         <!-- START THE FEATURETTES -->
 
         <hr class="featurette-divider">

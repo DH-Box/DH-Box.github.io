@@ -82,12 +82,12 @@
               {% if page.layout contains 'blog' %}
 
                 {% assign headingToUse = site.blog_name %}
-                {% assign subheadingToUse = site.blog_tagline %}
+                {% assign subheadingToUse = site.blog_description %}
 
               {% else %}
 
                 {% assign headingToUse = site.name %}
-                {% assign subheadingToUse = site.tagline %}
+                {% assign subheadingToUse = site.description %}
 
               {% endif %}
 

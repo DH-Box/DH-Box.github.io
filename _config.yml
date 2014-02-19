@@ -1,9 +1,10 @@
 # MODIFY these settings
 
+url: http://localhost:4000
 name: Simple Jekyll Bootstrap Theme
-tagline: A simple Bootstrap theme made with Jekyll
+description: A simple Bootstrap theme made with Jekyll
 blog_name: Simple Jekyll Bootstrap Theme
-blog_tagline: has a blog
+blog_description: has a blog
 timezone: America/New_York
 
 my_email: hkellaway@users.noreply.github.com
@@ -16,18 +17,29 @@ my_template_url: http://startbootstrap.com/
 my_headerimage_url: http://stockvault.net/
 my_headerimage_name: Header image by Stockvault
 
-my_label_toggle_navigation: Toggle Navigation
-my_label_findoutmore: Find Out More
-
-my_label_socialmedia: Connect&#58;
-my_delimiter_socialmedia: //
+my_search_engine_id_google: 001082080759982814974:vclhksv6uvk
+my_email_subscription_url: https://www.google.com/search?q=blog+email+subscription+services
 
 is_github_ribbon_displayed: true
 is_site_author_displayed: true
 is_copyright_displayed: false
 is_headerimagecred_displayed: false
 is_blog_pagination_on: true
+is_blog_printbutton_displayed: true
+is_blog_postshare_displayed: true
 is_socialmedia_widget_displayed: true
+is_search_displayed: true
+is_subscribe_displayed: true
+is_warning_displayed: true
+
+my_label_toggle_navigation: Toggle Navigation
+my_label_findoutmore: Find Out More
+my_label_subscribebutton: Subscribe <i class="icon icon-envelope"></i>
+my_label_socialmedia: Connect&#58;
+my_delimiter_socialmedia: //
+my_label_blog_post_list: Blog Posts
+my_label_post_share: Share&#58;&nbsp;
+my_label_warning: This is your warning area! It's a good place to display site-wide messages, such as  server downtime.<br /><br />Change the <em>is_warning_displayed</em> setting in your configuration file to turn it off. If using a link in the warning area, add <em>class="alert-link"</em> to link's tag to maintain a consistent look&#58; <br /><br /> <a href="#">Without alert-link class</a> vs. <a class="alert-link" href="#">With alert-link class</a>
  
 github_ribbon_color: gray # can be blue, orange, gray, green, red
 github_repo_url: https://github.com/hkellaway/Simple-Jekyll-Bootstrap-Theme
@@ -37,7 +49,7 @@ github_repo_url: https://github.com/hkellaway/Simple-Jekyll-Bootstrap-Theme
 markdown: redcarpet
 pygments: true
 
-permalink: pretty
+permalink: /:year/:month/:day/:title
 paginate: 5
 paginate_path: "blog/page:num"
 

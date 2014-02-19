@@ -8,16 +8,40 @@
 
 <body>
 
+<div class="blog">
+
 <ol class="breadcrumb">
   <li><a href="/">Home</a></li>
   <li class="active">Blog</li>
 </ol>
 
+  <table><tbody><tr>
+
+    <td>
+      <h1>{{ site.my_label_blog_post_list }}</h1>
+    </td>
+    <td>    
+      {% if site.is_subscribe_displayed %}
+
+        {% if page.layout contains 'blog' %}
+
+          <div class="subscribe">
+
+            {% include /widgets/subscribe.html %}
+
+          <div>
+        {% endif %}
+      {% endif %}
+    </td>
+    </tr></tbody></table>
 
 {% include blog_posts.html %}
 
 {% include footer.html %}
 
+</div>
+
 </body>
 
 </html>
+

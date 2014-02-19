@@ -1,0 +1,30 @@
+/********************************************************************/
+/*
+/* CSS options for the Print button
+/*
+/*******************************************************************/
+
+#printfriendly img{
+    float:left;
+    margin-top: 12px;
+    margin-right: 12px;
+}
+
+/* Changes font family and size */
+
+#printfriendly {
+    font-family: Arial;
+    font-size: 14px;
+}
+
+/* Changes header color */
+
+#printfriendly h1, #printfriendly h2, #printfriendly h3, #printfriendly h4 {
+    color: Green;
+}
+
+/* Hides the Page Title and Source URL */
+
+#printfriendly #pf-src {
+    display:none;
+}

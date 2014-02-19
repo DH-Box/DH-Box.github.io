@@ -2,7 +2,6 @@
   is_displayed: true
   url_base: mailto&#58;
   handle: hkellaway@users.noreply.github.com
-  custom_image_url: 
 
 - name: Twitter
   is_displayed: true
@@ -13,6 +12,11 @@
   is_displayed: true
   url_base: http://github.com/
   handle: hkellaway
+
+- name: RSS
+  is_displayed: true
+  url_base: /feed.blog.xml
+  handle: 
 
 - name: LinkedIn
   is_displayed: false
@@ -28,8 +32,3 @@
   is_displayed: false
   urlbase: http://demo.tumblr.com/
   handle: #
-
-- name: RSS
-  is_displayed: false
-  urlbase: 
-  handle: 

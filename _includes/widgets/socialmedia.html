@@ -4,8 +4,6 @@
 
   {{ site.my_label_socialmedia }}
 
-  {% if site.use_default_socialmedia_icons %}
-
       {% for service in site.data.socialmedia %}
 
         {% if service.is_displayed %}
@@ -24,8 +22,6 @@
           {% endif %}
 
         {% endfor %}
-
-   {% endif %}
 
   </div>
 </div>
