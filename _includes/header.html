@@ -29,7 +29,17 @@
 
     <!-- JavaScript -->
     <script src="/js/jquery-1.11.0.js"></script>
-    <script src="/js/bootstrap.js"></script>      
+    <script src="/js/bootstrap.js"></script>
+
+    {% if page.layout contains 'post' %}
+
+    <!-- ShareThis -->
+
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "5de4d4e0-e735-4361-bf4d-183c9b177956", doNotHash: false, doNotCopy: false, hashAddressBar: true});</script>
+
+    {% endif %}
 
     <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
         <div class="container">

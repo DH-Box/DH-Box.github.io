@@ -2,22 +2,31 @@
 
    <hr>
 
-   {% if site.is_socialmedia_widget_displayed %}
+   {% if site.is_footermenu_displayed %}
 
-     {% include /widgets/socialmedia.html %}
+     <div class="footermenu">
+
+       {% include /widgets/footermenu.html %}
+
+     </div>
 
    {% endif %}
 
-   <div style="float:right; overflow: hidden" class="subscribe">
+   <div class="socialmedia">
+
+     {% if site.is_socialmedia_widget_displayed %}
+
+       {% include /widgets/socialmedia.html %}
+
+     {% endif %}
+
+     <br />
 
      {% include /widgets/subscribe.html %}
 
-     <br />
-     <br />
-
-     {% include /widgets/search.html %}
-
    </div>
+
+   <br />
 
    <div class="backtotop">
  
@@ -47,9 +56,13 @@
 
      <br />
 
-     <a href="{{ site.my_headerimage_url }}" target="_blank">{{ site.my_headerimage_name }}</a>
+     {% if site.is_headerimagecred_displayed %}
 
-     <br />
+       <a href="{{ site.my_headerimage_url }}" target="_blank">{{ site.my_headerimage_name }}</a>
+
+       <br />
+
+     {% endif %}
 
      {% if site.is_copyright_displayed %}
 
@@ -60,6 +73,12 @@
        <a href="{{ site.my_license_url }}" target="_blank">{{ site.my_license }}</a>
           
      {% endif %}
+
+   </div>
+
+   <div class="search">
+
+     {% include /widgets/search.html %}
 
    </div>
 

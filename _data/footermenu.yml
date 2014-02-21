@@ -1,0 +1,8 @@
+- link_label: About
+  link_url: /about
+
+- link_label: Blog
+  link_url: /blog
+
+- link_label: Contact
+  link_url: /contact

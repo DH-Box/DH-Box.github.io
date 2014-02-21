@@ -1,0 +1,6 @@
+{% for link in site.data.footermenu %}
+  
+  <a href="{{ link.link_url }}">{{ link.link_label }}</a> {{ site.my_delimiter_footermenu }} //
+       
+{% endfor %}
+

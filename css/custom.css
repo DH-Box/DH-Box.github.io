@@ -4,6 +4,10 @@
 /*
 /*****************************************************************************/
 
+.missingpage {
+  margin-left: 50px;
+}
+
 .headline > .container > h3 {
   background: #ffffff;
   background: rgba(255, 255, 255, 0.9);
@@ -11,19 +15,30 @@
 
 .blog {
   margin-left: 50px;
+  margin-right: 50px;
+}
+
+.breadcrumbtrail {
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .post {
   margin-left: 80px;
+  margin-right: 80px;
+}
+
+.postheader {
+  margin-bottom: 20px;
 }
 
 .post .date {
   font-style: italic;
 }
 
-.post .post-print {
-  float: right;
-  margin-right: 120px;
+.postprint {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .posts {
@@ -37,7 +52,7 @@
 
 .posts span {
   color: #666;
-  font-family: Serif;
+  font-family: Monaco, "Courier New", monospace;
   font-size: 80%;
 }
 
@@ -52,8 +67,10 @@
 }
 
 .footer .socialmedia {
-  text-align: right;
+  float: right;
+  overflow: hidden;
   text-decoration: none;
+  margin-right:50px;
 }
 
 .footer .socialmedia a {
@@ -70,6 +87,12 @@
 
 .credits {
    font-size: 85%;
+}
+
+.searchdescription {
+  color: #333;
+  font-size: 75%;
+  margin-left: 10px;
 }
 
 .myicon {

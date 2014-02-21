@@ -4,11 +4,15 @@ categories: blog
 ---
 {% include header.html %}
 
-<ol class="breadcrumb">
-  <li><a href="/">Home</a></li>
-  <li><a href="/blog">Blog</a></li>
-  <li class=active>{{ page.title }}</li>
-</ol>
+<div class="breadcrumbtrail">
+
+  <ol class="breadcrumb">
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li class=active>{{ page.title }}</li>
+  </ol>
+
+</div>
 
 <div class="post">
 
@@ -16,30 +20,47 @@ categories: blog
 
 <div class="postheader">
 
-  <div  class="date">{{ page.date | date_to_string }}
-  </div>
+  <span  class="date">{{ page.date | date_to_string }}</span>
 
     {% if site.is_blog_printbutton_displayed %}
 
-      <div class="post-print">{% include /widgets/printbutton.html  %}
-      </div>
+      <span class="postprint">{% include /widgets/printbutton.html  %}</span>
 
     {% endif %}
 
 </div>
 
-<br />
-
   {{ content }}
 
   <br />
 
-  {% if site.is_blog_postshare_displayed %}
+<div class="postshare">
 
-    {% include /widgets/postshare.html %}
-
-  {% endif %}
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          {{ site.my_label_postshare }}
+        </td>
+        <td>
+          {% include /widgets/sharethis.html %}
+        </td>
+        <td>
+          &nbsp;
+        </td>
+        <td>
+          {% include /widgets/printbutton.html %}
+        </td>
+      </tr>
+    </tbody>
+  </table>
   
+</div>
+
+  <br />
+
+  {% include /widgets/disqus.html %}
+
 </div>
 
 {% include footer.html %}

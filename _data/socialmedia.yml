@@ -1,21 +1,21 @@
 - name: Email
   is_displayed: true
   url_base: mailto&#58;
-  handle: hkellaway@users.noreply.github.com
+  handle: dhbox@outlook.com
 
 - name: Twitter
   is_displayed: true
   url_base: http://twitter.com/
-  handle: DigiHumanatee
+  handle: DH_Box
 
 - name: GitHub
   is_displayed: true
   url_base: http://github.com/
-  handle: hkellaway
+  handle: DH-box
 
 - name: RSS
   is_displayed: true
-  url_base: /feed.blog.xml
+  url_base: http://feeds.feedburner.com/DHBoxBlog
   handle: 
 
 - name: LinkedIn

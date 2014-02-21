@@ -1,29 +1,29 @@
 # MODIFY these settings
 
-url: http://localhost:4000
-name: Simple Jekyll Bootstrap Theme
-description: A simple Bootstrap theme made with Jekyll
-blog_name: Simple Jekyll Bootstrap Theme
+url: http://dh-box.github.io
+name: DH Box
+description: A portable, customized<br>Linux environment for<br>Digital Humanities learners
+blog_name: DH Box
 blog_description: has a blog
 timezone: America/New_York
 
-my_email: hkellaway@users.noreply.github.com
-my_site_author_name: H Kellaway
+my_email: hkellaway@gc.cuny.edu
+my_site_author_name: Harlan Kellaway
 my_site_author_url: http://hkellaway.github.io
 my_license: Licensed under Apache License v2.0
 my_license_url: http://apache.org/licenses/LICENSE-2.0
-my_template_name: Original Theme  by Start Bootstrap
+my_template_name: Based on a  Theme by Start Bootstrap
 my_template_url: http://startbootstrap.com/
-my_headerimage_url: http://stockvault.net/
-my_headerimage_name: Header image by Stockvault
+my_headerimage_url: http://thepatternlibrary.com/
+my_headerimage_name: Header image by The Pattern Library
 
-my_search_engine_id_google: 001082080759982814974:vclhksv6uvk
-my_email_subscription_url: https://www.google.com/search?q=blog+email+subscription+services
+my_search_engine_id_google: 001082080759982814974:iugunkxoumg
+my_email_subscription_url: http://feedburner.google.com/fb/a/mailverify?uri=DHBoxBlog
 
 is_github_ribbon_displayed: true
 is_site_author_displayed: true
 is_copyright_displayed: false
-is_headerimagecred_displayed: false
+is_headerimagecred_displayed: true
 is_blog_pagination_on: true
 is_blog_printbutton_displayed: true
 is_blog_postshare_displayed: true
@@ -31,6 +31,7 @@ is_socialmedia_widget_displayed: true
 is_search_displayed: true
 is_subscribe_displayed: true
 is_warning_displayed: true
+is_footermenu_displayed: true
 
 my_label_toggle_navigation: Toggle Navigation
 my_label_findoutmore: Find Out More
@@ -39,9 +40,9 @@ my_label_socialmedia: Connect&#58;
 my_delimiter_socialmedia: //
 my_label_blog_post_list: Blog Posts
 my_label_post_share: Share&#58;&nbsp;
-my_label_warning: This is your warning area! It's a good place to display site-wide messages, such as  server downtime.<br /><br />Change the <em>is_warning_displayed</em> setting in your configuration file to turn it off. If using a link in the warning area, add <em>class="alert-link"</em> to link's tag to maintain a consistent look&#58; <br /><br /> <a href="#">Without alert-link class</a> vs. <a class="alert-link" href="#">With alert-link class</a>
+my_label_warning: Site under construction! Visit <a class="alert-link" href="http://dhbox.commons.gc.cuny.edu/" target="_blank">DH Box Blog</a> for the latest information about DH Box.
  
-github_ribbon_color: gray # can be blue, orange, gray, green, red
+github_ribbon_color: orange # can be blue, orange, gray, green, red
 github_repo_url: https://github.com/hkellaway/Simple-Jekyll-Bootstrap-Theme
 
 # DO NOT modify these without understanding why - it may have unintended consequences!
