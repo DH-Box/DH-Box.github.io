@@ -4,7 +4,7 @@
   display_findoutmore_url: true
   findoutmore_url: /about
   description: Not much, so far. But we intend it to be a portable, customized linux environment for Digital Humanities learners that can rely on incredibly inexpensive technology. All you really need is a computer that runs Linux (and a monitor and keyboard, of course!)<br><br>DH Box is for anyone and everyone who is interested in learning Digital Humanities inquiry techniques, but especially those who may not have any prior programming experience.
-  image_url: http://placekitten.com/500/500
+  image_url: /images/homepage1.png
   image_alignment: right
 
 - heading_start: How can I use
@@ -13,7 +13,7 @@
   display_findoutmore_url: true
   findoutmore_url: /get-started/
   description: Our first major goal is to get DH Box running on the Raspberry Pi. Once that’s done, DH Box will also be runnable on nearly any Linux computer!
-  image_url: http://placekitten.com/500/500
+  image_url: /images/homepage1.png
   image_alignment: left
 
 - heading_start: Questions?
@@ -21,6 +21,6 @@
   link_label: Contact
   display_findoutmore_url: true
   findoutmore_url: /contact/
-  description: DH Box is <a href="http://github.com/DH-Box" target="_blank">open source</a> and is constantly under development.<br>If you have feedback, an issue, or a question - we want to know!
-  image_url: http://placekitten.com/500/500
+  description: DH Box is <a href="http://github.com/DH-Box" target="_blank">open source</a> and is constantly under development.<br><br>If you have feedback, an issue, or a question - we want to know!
+  image_url: /images/homepage1.png
   image_alignment: right
