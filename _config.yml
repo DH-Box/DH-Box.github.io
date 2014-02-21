@@ -2,12 +2,16 @@
 
 url: http://dh-box.github.io
 name: DH Box
+<<<<<<< HEAD
 description: A toolbox and textbox for<br>Digital Humanities
+=======
+description: A toolbox and textbook for Digital Humanities
+>>>>>>> 5ffee4ebd8e6c9645d6e9a83926caf5ed339c58f
 blog_name: DH Box
 blog_description: has a blog
 timezone: America/New_York
 
-my_email: hkellaway@gc.cuny.edu
+my_email: dhbox@outbook.com
 my_site_author_name: Harlan Kellaway
 my_site_author_url: http://hkellaway.github.io
 my_license: Licensed under Apache License v2.0
