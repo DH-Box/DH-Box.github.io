@@ -25,7 +25,7 @@
 
 - name: Blog
   is_displayed: true
-  url_base: /blog/
+  url_base: http://dhbox.commons.gc.cuny.edu/
   handle: #
 
 - name: Tumblr
