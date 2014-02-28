@@ -1,7 +1,7 @@
 - name: Email
   is_displayed: true
   url_base: mailto&#58;
-  handle: dhbox@outlook.com
+  handle: hello@dhbox.org
 
 - name: Twitter
   is_displayed: true
@@ -11,7 +11,7 @@
 - name: GitHub
   is_displayed: true
   url_base: http://github.com/
-  handle: DH-box
+  handle: DH-Box
 
 - name: RSS
   is_displayed: true
