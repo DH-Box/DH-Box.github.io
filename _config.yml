@@ -1,13 +1,13 @@
 # MODIFY these settings
 
-url: http://dh-box.github.io
+url: http://dhbox.org
 name: DH Box
-description: A toolbox and textbbook for<br>Digital Humanities
+description: A toolbox and textbook for<br>Digital Humanities
 blog_name: DH Box
 blog_description: has a blog
 timezone: America/New_York
 
-my_email: dhbox@outbook.com
+my_email: hello@dhbox.org
 my_site_author_name: Harlan Kellaway
 my_site_author_url: http://hkellaway.github.io
 my_license: Licensed under Apache License v2.0
@@ -43,7 +43,7 @@ my_label_post_share: Share&#58;&nbsp;
 my_label_warning: Site under construction! Visit <a class="alert-link" href="http://dhbox.commons.gc.cuny.edu/" target="_blank">DH Box Blog</a> for the latest information about DH Box.
  
 github_ribbon_color: orange # can be blue, orange, gray, green, red
-github_repo_url: https://github.com/hkellaway/Simple-Jekyll-Bootstrap-Theme
+github_repo_url: https://github.com/DH-Box
 
 # DO NOT modify these without understanding why - it may have unintended consequences!
 
