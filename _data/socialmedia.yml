@@ -13,6 +13,11 @@
   url_base: http://github.com/
   handle: DH-Box
 
+- name: Gittip
+  is_displayed: false
+  url_base: http://gittip.com/
+  handle: DH_Box
+
 - name: RSS
   is_displayed: true
   url_base: http://feeds.feedburner.com/DHBoxBlog
