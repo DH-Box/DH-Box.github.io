@@ -3,7 +3,7 @@ body {
 }
 
 .header-image {
-	background: url(/images/homepage_image.png) repeat;/* Use a tiling background image or a full width image - if you're using full width you will need to change no-repeat center center cover  */
+	background: url(/images/gplaypattern.png) repeat;/* Use a tiling background image or a full width image - if you're using full width you will need to change no-repeat center center cover  */
 	background-position: top;
 	height: auto;
 	display: block;
@@ -17,14 +17,19 @@ body {
 
 .headline > .container > h1 {
 	font-size: 130px;
-	background: #ffffff;
+	/* 
+background: #ffffff;
 	background: rgba(255, 255, 255, 0.9);
+ */
+
 }
 
 .headline > .container > h2 {
-	font-size: 77px;
-	background: #ffffff;
+	font-size: 57px;
+	/* 
+background: #ffffff;
 	background: rgba(255, 255, 255, 0.9);
+ */
 }
 
 .featurette-divider {
