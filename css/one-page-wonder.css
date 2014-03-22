@@ -17,6 +17,7 @@ body {
 
 .headline > .container > h1 {
 	font-size: 130px;
+	color: #785C7E;
 	/* 
 background: #ffffff;
 	background: rgba(255, 255, 255, 0.9);
@@ -26,6 +27,7 @@ background: #ffffff;
 
 .headline > .container > h2 {
 	font-size: 57px;
+	margin-bottom: 30px;
 	/* 
 background: #ffffff;
 	background: rgba(255, 255, 255, 0.9);
