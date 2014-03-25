@@ -1,0 +1,8 @@
+DH Box: MALLET Resources
+==================================
+
+Contents:
+
+.. toctree::
+   :maxdepth: 0
+
