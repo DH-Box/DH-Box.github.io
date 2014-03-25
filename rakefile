@@ -11,7 +11,7 @@ task :serve do
   system "open http://localhost:4000"
 end
 
-desc "Uupdates GitHub."
+desc "Updates GitHub."
 # Usage: rake ship "Commit message."
 task :ship do
   message = ARGV.last
