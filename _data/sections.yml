@@ -3,24 +3,24 @@
   link_label: About
   display_findoutmore_url: true
   findoutmore_url: /about
-  description: DH Box includes pre-installed and configured DH tools accessible in a cloud environment. This tool will guide Digital Humanities novices through the often intimidating process of DH Tool installation and configuration. <br><br>DH Box is for anyone and everyone who is interested in learning Digital Humanities inquiry techniques, but especially those who may not have any prior programming experience.
+  description: It's a pre-configured Linux computer in the cloud. DH Box contains popular Digital Humanities inquiry software- pre-installed and configured so users can move straight to research without sacrificing time and energy on software installations. <br><br>  DH Box makes it simple for scholars (and students-as-scholars) to use powerful computational tools immediately, even if they lack deep computational literacy or full service IT support. Perform statistical analysis with <a href="https://www.rstudio.com/" target="_blank">R Studio</a>! Create digital exhibits with <a href="http://omeka.org/" target="_blank">Omeka</a>! Use <a href="http://mallet.cs.umass.edu/" target="_blank">MALLET</a> for topic modeling!
   image_url: /images/gplaypattern.png
   image_alignment: right
-
+  
 - heading_start: How can I use
   heading_end: DH Box?
   link_label: Get Started
   display_findoutmore_url: true
   findoutmore_url: /get-started/
-  description: Our first major goal is to get DH Box running on the Raspberry Pi. Once that’s done, DH Box will also be runnable on nearly any Linux computer!
+  description: You will access it directly from your web browser- all you need is an internet connection! DH Box is a virtual web server image. Since it lives in the cloud, it can be accessed very simply. <br><br> Teachers can instantly deploy a computer lab in the cloud, eliminating the need to spend hours fiddling with a roomful of computers. <br><br> We're developing DH Box right now. Stay tuned for announcements on the Alpha version!
   image_url: /images/gplaypattern.png
   image_alignment: left
 
-- heading_start: Questions?
-  heading_end: Let us know.
+- heading_start: Connect 
+  heading_end: with us!
   link_label: Contact
   display_findoutmore_url: true
   findoutmore_url: /contact/
-  description: DH Box is <a href="http://github.com/DH-Box" target="_blank">open source</a> and is constantly under development.<br><br>If you have feedback, an issue, or a question - we want to know!
+  description: We should mention that DH Box is open source- check out our <a href="http://github.com/DH-Box" target="_blank">GitHub</a> repository! <br><br> We've begun building a community of educators, librarians, and developers organized around increasing the utility of DH Box in academia. We plan to add more tools and make improvements based on community input. <br><br> Questions? We'd love to hear from you!
   image_url: /images/gplaypattern.png
   image_alignment: right
