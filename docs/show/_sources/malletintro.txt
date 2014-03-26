@@ -1,0 +1,11 @@
+DH Box: MALLET Intro
+==================================
+
+Contents:
+
+.. toctree::
+   :maxdepth: 3
+
+malletsetup
+malletresources
+malletfaqs
