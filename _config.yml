@@ -40,7 +40,7 @@ my_label_socialmedia: Connect&#58;
 my_delimiter_socialmedia: //
 my_label_blog_post_list: Blog Posts
 my_label_post_share: Share&#58;&nbsp;
-my_label_warning: Site under construction! Visit <a class="alert-link" href="http://dhbox.commons.gc.cuny.edu/" target="_blank">DH Box Blog</a> for the latest information about DH Box.
+my_label_warning: This site is under construction. Visit <a class="alert-link" href="http://dhbox.commons.gc.cuny.edu/" target="_blank">DH Box Blog</a> for the latest.
  
 github_ribbon_color: orange # can be blue, orange, gray, green, red
 github_repo_url: https://github.com/DH-Box
