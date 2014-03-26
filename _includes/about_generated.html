@@ -1,0 +1,41 @@
+    <div class="container">
+
+      {% if site.is_warning_displayed %}
+
+        {% include /widgets/warning.html %}
+
+      {% endif %}
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        {% for section in site.data.people %}
+
+          {% assign stripped_spaces =  section.link_label | remove: ' ' %}
+          {% assign link_anchor = stripped_spaces | downcase  %}
+
+          <div class="featurette" id="{{ link_anchor }}">
+
+          <br>  
+
+              <img class="featurette-image img-circle img-responsive pull-{{ section.image_alignment }}" src="{{ section.image_url }}">
+              <h2 class="featurette-heading">{{ section.first_name }}
+                <span class="text-muted">{{ section.last_name }}</span>
+              </h2>
+              <p class="lead">{{ section.description }}</p>
+            
+              {% if section.display_findoutmore_url  %}
+
+                <p><a href="{{ section.findoutmore_url }}">{{ site.my_label_findoutmore }}</a></p>
+
+              {% endif %}
+
+              <br><br>
+
+          </div>
+
+        {% endfor %}
+
+        <!-- END THE FEATURETTES -->
+      </div>
