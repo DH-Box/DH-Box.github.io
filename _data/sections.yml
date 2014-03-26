@@ -3,7 +3,7 @@
   link_label: About
   display_findoutmore_url: true
   findoutmore_url: /about
-  description: Dh Box is a Linux computer in the cloud. It contains popular Digital Humanities inquiry software- pre-installed and configured so users can move straight to research without sacrificing time and energy on software installations. <br><br>  DH Box makes it simple for scholars (and students-as-scholars) to use powerful computational tools immediately, even if they lack deep computational literacy or full service IT support. If you are a teacher, scholar, or student interested in taking a 'DH' approach to research, DH Box is the perfect place to start.
+  description: DH Box is a Linux computer in the cloud. It contains popular Digital Humanities inquiry software- pre-installed and configured so users can move straight to research without sacrificing time and energy on software installations. <br><br>  DH Box makes it simple for scholars (and students-as-scholars) to use powerful computational tools immediately, even if they lack deep computational literacy or full service IT support. If you are a teacher, scholar, or student interested in taking a 'DH' approach to research, DH Box is the perfect place to start.
   image_url: /images/gplaypattern.png
   image_alignment: right
   
