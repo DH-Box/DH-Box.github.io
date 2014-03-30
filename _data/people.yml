@@ -1,8 +1,8 @@
-- first_name: What is
-  last_name: DH Box?
-  stuff: Fill me!
-  description: description
-  image_url: /images/myface.png
+- first_name: Stephen Zweibel <br>
+  last_name: Developer & Founder
+  stuff:  
+  description: <a href="mailto:steve@dhbox">steve@dhbox.org</a> // <a href="https://twitter.com/stevezweibel">@stevezweibel</a> // <a href="www.zweibel.net">wwww.zweibel.net</a> // <a href="www.github.com/szweibel">github.com/szweibel </a <br><br> <br><br> Stephen is a Reference Librarian working at Hunter College. He is getting his second master’s degree in Liberal Studies, with a focus on Digital Humanities. Stephen likes thinking about emerging technologies and their use in libraries and the classroom. <br><br> Stephen proposed DH Box as an assignment in Matt Gold’s DH Praxis class at the CUNY Graduate Center. It has everything he loves in a project- increasing access to technological resources, and enabling computational analysis in the humanities– all in an open source package! 
+  image_url: /images/Steve.jpeg
   image_alignment: right
 
 - first_name: What is
