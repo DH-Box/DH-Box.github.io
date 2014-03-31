@@ -11,4 +11,12 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-You can visit DH Box's current document at:  `https://github.com/DH-Box/dhbox/wiki <https://github.com/DH-Box/dhbox/wiki>`_
+   getting_started
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
