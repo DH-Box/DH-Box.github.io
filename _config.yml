@@ -2,7 +2,7 @@
 
 url: http://dhbox.org
 name: DH Box
-description: A Push-Button <br/> Digital Humanities Laboratory
+adescription: A Push-Button <br/> Digital Humanities Laboratory
 blog_name: DH Box
 blog_description: has a blog
 timezone: America/New_York
@@ -20,7 +20,7 @@ my_headerimage_name: Header image by The Pattern Library
 my_search_engine_id_google: 001082080759982814974:iugunkxoumg
 my_email_subscription_url: http://feedburner.google.com/fb/a/mailverify?uri=DHBoxBlog
 
-is_github_ribbon_displayed: true
+is_github_ribbon_displayed: false
 is_site_author_displayed: true
 is_copyright_displayed: false
 is_headerimagecred_displayed: true
@@ -57,6 +57,8 @@ paginate_path: "blog/page:num"
 my_blog_subpath: /blog/
 my_images_subpath: /images/
 my_images_filetype: .png
+
+my_aboutpage_why_label: Why DH Box?
 
 jekyll_url: http://jekyllrb.com/
 github_ribbon_image_stub: github_ribbon_

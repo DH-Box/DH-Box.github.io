@@ -1,10 +1,15 @@
     <div class="container">
 
-      {% if site.is_warning_displayed %}
+        <div class="breadcrumbtrail">
 
-        {% include /widgets/warning.html %}
+          <ol class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li class=active>Us</li>
+          </ol>
+        </div>
 
-      {% endif %}
+        <h1>The Team</h1>
 
         <!-- START THE FEATURETTES -->
 
@@ -12,26 +17,38 @@
 
         {% for section in site.data.people %}
 
-          {% assign stripped_spaces =  section.link_label | remove: ' ' %}
+          {% assign stripped_spaces =  section.anchor | remove: ' ' %}
           {% assign link_anchor = stripped_spaces | downcase  %}
 
           <div class="featurette" id="{{ link_anchor }}">
 
           <br>  
 
-              <img class="featurette-image img-circle img-responsive pull-{{ section.image_alignment }}" src="{{ section.image_url }}">
-              <h2 class="featurette-heading">{{ section.first_name }}
-                <span class="text-muted">{{ section.last_name }}</span>
+              <img class="featurette-image img-circle img-responsive pull-{{ section.image_alignment }}" src="{{ site.my_images_subpath }}{{ section.image_name }}">
+              <h2 class="featurette-heading">{{ section.name }}
+                <br>
+                <span class="text-muted">{{ section.role }}</span>
               </h2>
-              <p class="lead">{{ section.description }}</p>
-            
-              {% if section.display_findoutmore_url  %}
+              <div class="lead">
 
-                <p><a href="{{ section.findoutmore_url }}">{{ site.my_label_findoutmore }}</a></p>
+                <p>
+                  {{ section.social_media }}
+                  <br><br>
+                  {{ section.description }}
+                </p>
+
+                {% if section.display_why %}
+
+                <br><br>
+
+                 <p class="why">{{ site.my_aboutpage_why_label }}</p>
+
+                 <p>{{ section.why }}</p>
+
+                <br><br>
+
 
               {% endif %}
-
-              <br><br>
 
           </div>
 

@@ -22,6 +22,10 @@ div:target {
   margin-left: 50px;
 }
 
+.lead > .why {
+  font-weight: bold;
+}
+
 .blog {
   margin-left: 50px;
   margin-right: 50px;

@@ -11,12 +11,16 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   getting_started
+You can visit DH Box's current document at:  `https://github.com/DH-Box/dhbox/wiki <https://github.com/DH-Box/dhbox/wiki>`
 
-Indices and tables
-==================
+  python -c 'import sphinx'
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+If that fails grab the latest version of and install it with::
+
+  > sudo easy_install -U Sphinx
+
+Now you are ready to build a template for your docs, using
+sphinx-quickstart::
+
+  > sphinx-quickstart
 
