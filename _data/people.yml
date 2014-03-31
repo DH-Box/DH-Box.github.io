@@ -1,13 +1,29 @@
 - first_name: Stephen Zweibel <br>
   last_name: Developer & Founder
   stuff:  
-  description: <a href="mailto:steve@dhbox">steve@dhbox.org</a> // <a href="https://twitter.com/stevezweibel">@stevezweibel</a> // <a href="www.zweibel.net">wwww.zweibel.net</a> // <a href="www.github.com/szweibel">github.com/szweibel </a <br><br> <br><br> Stephen is a Reference Librarian working at Hunter College. He is getting his second master’s degree in Liberal Studies, with a focus on Digital Humanities. Stephen likes thinking about emerging technologies and their use in libraries and the classroom. <br><br> Stephen proposed DH Box as an assignment in Matt Gold’s DH Praxis class at the CUNY Graduate Center. It has everything he loves in a project- increasing access to technological resources, and enabling computational analysis in the humanities– all in an open source package! 
+  description: <a href="mailto:steve@dhbox">steve@dhbox.org</a> // <a href="https://twitter.com/stevezweibel">@stevezweibel</a> // <a href="http://www.zweibel.net">zweibel.net</a> // <a href="https://github.com/szweibel">github.com/szweibel </a> <br><br> Stephen is a Reference Librarian working at Hunter College. He is getting his second master’s degree in Liberal Studies, with a focus on Digital Humanities. Stephen likes thinking about emerging technologies and their use in libraries and the classroom. <br><br> <b>Why DH Box?</b> <br><br> Stephen proposed DH Box as an assignment in Matt Gold’s DH Praxis class at the CUNY Graduate Center. It has everything he loves in a project- increasing access to technological resources, and enabling computational analysis in the humanities– all in an open source package! 
   image_url: /images/Steve.jpeg
   image_alignment: right
 
-- first_name: What is
-  last_name: DH Box?
-  stuff: Fill me!
-  description: description
-  image_url: /images/myface.png
+- first_name: Gioia Stevens <br>
+  last_name: Project Manager
+  stuff: 
+  description: <a href="mailto:gstevens@gc.cuny.org">gstevens@gc.cuny.org</a> // <a href=https://twitter.com/gioiastevens">@gioiastevens</a> <br><br> Gioia is a Metadata Librarian at the CUNY Graduate Center. She is getting her second master’s degree in the Digital Humanities track of the Liberal Studies program at the Graduate Center. Gioia is very interested in search tools, text mining, electronic resources, and open access publishing. <br><br> <b>Why DH Box?</b> <br><br> Gioia thinks DH Box is a wonderful way to introduce new students to the digital humanities. By providing a set of preinstalled and configured tools, the project will allow students to move past all the logistical hurdles and straight into doing computational analysis.
+  image_url: /images/Gioia.png
   image_alignment: right
+  
+- first_name: Harlan Kellaway <br>
+  last_name: Developer
+  stuff: 
+  description: <a href="mailto:harlan@dhbox.org">harlan@dhbox.org</a> // <a href="http://twitter.com/DigiHumanatee">@DigiHumanatee</a> // <a href=“https://github.com/hkellaway>github.com/hkellaway</a> // <a href="https://hkellaway.github.io">hkellaway.github.io</a> <br><br> Harlan works in application development, mostly for non-profits. He is also a CUNY graduate student, focusing on Digital Humanities and Gender Studies. He hopes to use his background in tech and passion for gender studies to promote social justice for gender non-conforming communities. <br><br> <b>Why DH Box?</b> <br><br> Harlan believes that DH Box aligns with a very important social justice- serving broad populations by providing access to knowledge and education. An open source project like DH Box provides an affordable and convenient means by which to explore important Digital Humanities utilities. Harlan hopes that through example, DH Box will act as an invaluable model for how other software suites can be delivered in the future.
+  image_url: /images/Harlan.jpeg
+  image_alignment: right
+  
+- first_name: Cailean Cooney <br>
+  last_name: Outreach 
+  stuff: 
+  description: <a href="mailto:cailean@dhbox.org">cailean@dhbox.org</a> // <a href="https://twitter.com/_csmcc">@_csmcc</a> // <a href="http://cuny.is/caileancooney">cuny.is/caileancooney</a> <br><br> Cailean is a Librarian at New York City College of Technology and is currently pursuing her second master’s degree in Digital Humanities at the Graduate Center, CUNY. Cailean is excited that this project has given her the opportunity to break into coding. She’s also particularly fascinated by Digital Humanities’ unique approach to humanities education- praxis based learning. <br><br> <b>Why DH Box?</b> <br><br> Cailean is looking forward to contributing to the open source movement as a member of the DH Box project. She is developing a more sophisticated knowledge of the interplay between programming and cloud computing. Cailean expects this learning process to catalyze her curiosity and spawn further inquiry into how computational platforms and open source software can mobilize education and promote information access.
+  image_url: /images/Cailean.jpeg
+  image_alignment: right
+  
+
