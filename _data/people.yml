@@ -10,7 +10,7 @@
   stuff: 
   description: <a href="mailto:gstevens@gc.cuny.org">gstevens@gc.cuny.org</a> // <a href=https://twitter.com/gioiastevens">@gioiastevens</a> <br><br> Gioia is a Metadata Librarian at the CUNY Graduate Center. She is getting her second master’s degree in the Digital Humanities track of the Liberal Studies program at the Graduate Center. Gioia is very interested in search tools, text mining, electronic resources, and open access publishing. <br><br> <b>Why DH Box?</b> <br><br> Gioia thinks DH Box is a wonderful way to introduce new students to the digital humanities. By providing a set of preinstalled and configured tools, the project will allow students to move past all the logistical hurdles and straight into doing computational analysis.
   image_url: /images/Gioia.png
-  image_alignment: right
+  image_alignment: left
   
 - first_name: Harlan Kellaway <br>
   last_name: Developer
@@ -24,6 +24,6 @@
   stuff: 
   description: <a href="mailto:cailean@dhbox.org">cailean@dhbox.org</a> // <a href="https://twitter.com/_csmcc">@_csmcc</a> // <a href="http://cuny.is/caileancooney">cuny.is/caileancooney</a> <br><br> Cailean is a Librarian at New York City College of Technology and is currently pursuing her second master’s degree in Digital Humanities at the Graduate Center, CUNY. Cailean is excited that this project has given her the opportunity to break into coding. She’s also particularly fascinated by Digital Humanities’ unique approach to humanities education- praxis based learning. <br><br> <b>Why DH Box?</b> <br><br> Cailean is looking forward to contributing to the open source movement as a member of the DH Box project. She is developing a more sophisticated knowledge of the interplay between programming and cloud computing. Cailean expects this learning process to catalyze her curiosity and spawn further inquiry into how computational platforms and open source software can mobilize education and promote information access.
   image_url: /images/Cailean.jpeg
-  image_alignment: right
+  image_alignment: left
   
 
