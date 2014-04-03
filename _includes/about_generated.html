@@ -23,8 +23,10 @@
           <div class="featurette" id="{{ link_anchor }}">
 
           <br>  
+              {% if section.display_image %}
+                <img class="featurette-image img-circle img-responsive pull-{{ section.image_alignment }}" src="{{ site.my_images_subpath }}{{ section.image_name }}">
+              {% endif %}              
 
-              <img class="featurette-image img-circle img-responsive pull-{{ section.image_alignment }}" src="{{ site.my_images_subpath }}{{ section.image_name }}">
               <h2 class="featurette-heading">{{ section.name }}
                 <br>
                 <span class="text-muted">{{ section.role }}</span>
@@ -46,7 +48,6 @@
                  <p>{{ section.why }}</p>
 
                 <br><br>
-
 
               {% endif %}
 
