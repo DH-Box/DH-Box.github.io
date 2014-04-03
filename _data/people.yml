@@ -6,7 +6,7 @@
   display_why: true
   why: Steve proposed DH Box as an assignment in Matt Gold’s DH Praxis class at the CUNY Graduate Center. It has everything he loves in a project- increasing access to technological resources, and enabling computational analysis in the humanities– all in an open source package!
   display_image: true
-  image_name: Steve.jpeg
+  image_name: SteveBW.jpeg
   image_alignment: left
 
 - name: Gioia Stevens
@@ -17,7 +17,7 @@
   display_why: true
   why: Gioia thinks DH Box is a wonderful way to introduce new students to the digital humanities. By providing a set of preinstalled and configured tools, the project will allow students to move past all the logistical hurdles and straight into doing computational analysis.
   display_image: true
-  image_name: Gioia.png
+  image_name: GioiaBW.png
   image_alignment: left
   
 - name: Harlan Kellaway
@@ -28,7 +28,7 @@
   display_why: true
   why: Harlan believes that DH Box aligns with a very important social justice -- serving broad populations by providing access to knowledge and education. An open source project like DH Box provides an affordable and convenient means by which to explore important Digital Humanities utilities. Harlan hopes that through example, DH Box will act as an invaluable model for how other software suites can be delivered in the future.
   display_image: true
-  image_name: Harlan.jpeg
+  image_name: HarlanBW.jpeg
   image_alignment: left
   
 - name: Cailean Cooney
@@ -39,7 +39,7 @@
   display_why: true
   why: Cailean is looking forward to contributing to the open source movement as a member of the DH Box project. She is developing a more sophisticated knowledge of the interplay between programming and cloud computing. Cailean expects this learning process to catalyze her curiosity and spawn further inquiry into how computational platforms and open source software can mobilize education and promote information access.
   display_image: true
-  image_name: Cailean.jpeg
+  image_name: CaileanBW.jpeg
   image_alignment: left
 
 - name: Matt Gold
