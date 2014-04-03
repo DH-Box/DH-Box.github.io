@@ -3460,7 +3460,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   list-style: none;
 }
 .nav > li {
-  position: relative;
   display: block;
 }
 .nav > li > a {
@@ -3745,7 +3744,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  height: 20px;
   padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
@@ -3795,7 +3793,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 20px;
+  line-height: 70px;
 }
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {

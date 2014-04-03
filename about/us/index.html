@@ -3,4 +3,62 @@ layout: about_generated
 title: The Team | DH Box
 ---
 
-<!-- this content is automatically generated -->
+ <div class="container">
+
+        <div class="breadcrumbtrail">
+
+          <ol class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li class=active>Us</li>
+          </ol>
+        </div>
+
+        <h1>The Team</h1>
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        {% for section in site.data.people %}
+
+          {% assign stripped_spaces = section.anchor | remove: ' ' %}
+          {% assign link_anchor = stripped_spaces | downcase %}
+
+          <div class="featurette" id="{{ link_anchor }}">
+
+          <br>
+              {% if section.display_image %}
+                <img class="featurette-image img-circle img-responsive pull-{{ section.image_alignment }}" src="{{ site.my_images_subpath }}{{ section.image_name }}">
+              {% endif %}
+
+              <h2 class="featurette-heading">{{ section.name }}
+                <br>
+                <span class="text-muted">{{ section.role }}</span>
+              </h2>
+              <div class="lead">
+
+                <p>
+                  {{ section.social_media }}
+                  <br><br>
+                  {{ section.description }}
+                </p>
+
+                {% if section.display_why %}
+
+                <br><br>
+
+                 <p class="why">{{ site.my_aboutpage_why_label }}</p>
+
+                 <p>{{ section.why }}</p>
+
+                <br><br>
+
+              {% endif %}
+
+          </div>
+
+        {% endfor %}
+
+        <!-- END THE FEATURETTES -->
+  </div>

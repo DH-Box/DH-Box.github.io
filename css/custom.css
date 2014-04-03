@@ -4,6 +4,11 @@
 /*
 /*****************************************************************************/
 
+@import 'bootstrap.less;
+div.logo-image {
+    .border-radius( 5px );
+}
+
 div:target {
 	padding-top: 50px;
 }

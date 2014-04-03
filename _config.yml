@@ -8,6 +8,7 @@ blog_description: has a blog
 timezone: America/New_York
 
 my_email: hello@dhbox.org
+my_email_subject: Hello from the DH Box website!
 my_site_author_name: Harlan Kellaway
 my_site_author_url: http://hkellaway.github.io
 my_license: Licensed under Apache License v2.0
@@ -23,7 +24,7 @@ my_email_subscription_url: http://feedburner.google.com/fb/a/mailverify?uri=DHBo
 is_github_ribbon_displayed: false
 is_site_author_displayed: true
 is_copyright_displayed: false
-is_headerimagecred_displayed: true
+is_headerimagecred_displayed: false
 is_blog_pagination_on: true
 is_blog_printbutton_displayed: true
 is_blog_postshare_displayed: true
@@ -57,6 +58,8 @@ paginate_path: "blog/page:num"
 my_blog_subpath: /blog/
 my_images_subpath: /images/
 my_images_filetype: .png
+my_logo_filename: logo.png
+
 
 my_aboutpage_why_label: Why DH Box?
 
