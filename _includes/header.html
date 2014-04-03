@@ -59,12 +59,24 @@
 
                    {% for section in site.data.sections %}
 
-                     {% assign stripped_spaces =  section.link_label | remove: ' ' %}
-                     {% assign link_anchor = stripped_spaces | downcase  %}
+                     <li>
 
-                     <li><a href="/#{{ link_anchor }}">{{ section.link_label }}</a></li>
+                     {% if section.generate_section %}
+
+                       {% assign stripped_spaces =  section.link_label | remove: ' ' %}
+                       {% assign link_anchor = stripped_spaces | downcase  %}
+
+                       <a href="/#{{ link_anchor }}">{{ section.link_label }}</a>
+
+                     {% else %}
+
+                       <a href="{{ section.url }}">{{ section.link_label }}</a>
+
+                     {% endif %}
 
                    {% endfor %}
+
+                   </li>
 
                 </ul>
             </div>
