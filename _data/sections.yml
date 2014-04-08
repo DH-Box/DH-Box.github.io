@@ -37,3 +37,13 @@
   description: DH Box is open source- check out our <a href="http://github.com/DH-Box" target="_blank">GitHub</a> repository. <br><br> We've begun building a community of educators, librarians, and developers organized around increasing the utility of DH Box in academia. We plan to add more tools and make improvements based on community input. <br><br> Questions? We'd love to hear from you!
   image_url: /images/gplaypattern.png
   image_alignment: right
+
+- link_label: The Team
+  generate_section: false
+  heading_start:
+  heading_end:
+  display_findoutmore_url:
+  url: /about/us
+  description:
+  image_url:
+  image_alignment:
