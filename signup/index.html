@@ -1,0 +1,47 @@
+---
+layout: default
+title: Sign Up
+---
+<script type="text/javascript">
+$( document ).ready(function() {
+    // Prevents going to API page, allows showing a success indicator
+    $('#dhbox_form_submit').click(function(e){
+        e.preventDefault();
+        var formData = $('#the_form').serialize();
+        console.log(formData);
+        $.post('http://54.235.239.235:8080/dhbox', formData);
+    });
+
+    $(document).on('click', '#add', function(e) {
+        // Adds a new user text box
+        var intId = $("#the_form div").length + 1;
+        var userWrapper = $("<div class=\"userwrapper\" id=\"field" + intId + "\"/>");
+        var newUserLabel = $("<label for=\"user" + intId + "\">User:</label>");
+        var newUser = $("<input type=\"text\" class=\"users\" name=\"users\" id=\"user" + intId + "\" />");
+        var removeButton = $("<input type=\"button\" class=\"remove\" value=\"-\" />");
+        removeButton.click(function() {
+            $(this).parent().remove();
+        });
+        userWrapper.append(newUserLabel);
+        userWrapper.append(newUser);
+        userWrapper.append(removeButton);
+        $("#the_form").append(userWrapper);
+    });
+
+});
+</script>
+<div class="col-md-10">
+    <form action="http://66.108.238.228:3000/dhbox" id="the_form" method="post">
+        <div>
+            <label for='admin'>Administrator:</label>
+            <input type'text' id='admin' name='admin'/>
+        </div>
+<!--             <input type'text' class='users' name='users'/> -->
+    </form>
+        <div>
+            <input type="button" value="Add a user" class="add" id="add" />
+        </div>
+        <div>
+            <input name="save" id='dhbox_form_submit' type="submit" value="Save" class="btn btn-success" />
+        </div>
+</div>
