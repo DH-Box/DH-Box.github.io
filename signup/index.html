@@ -8,28 +8,39 @@ $( document ).ready(function() {
     // Prevents going to API page, allows showing a success indicator
     $('#dhbox_form_submit').click(function(e){
         e.preventDefault();
-        var formData = $('#the_form').serialize();
-        console.log(formData);
-        $.post('http://54.235.239.235:8080/dhbox', formData);
+        var stuff = { users: [] };
+        $('.userwrapper').each(function () { 
+            stuff.users.push({ 
+            name: $(this).find('[class=users]').val(), 
+            pass: $(this).find('[class=passes]').val(), 
+            isAdmin: $(this).find('[name=admin]').val() 
+            }) 
+        });
+        stuff = JSON.stringify(stuff);
+        console.log(stuff);
+        $.post('http://Localhost:8080/test', stuff);
     });
 
     $(document).on('click', '#add', function(e) {
-        // Adds a new user text box
-        var intId = $("#the_form div").length + 1;
-        var userWrapper = $("<div class=\"userwrapper\" id=\"field" + intId + "\"/>");
-        var newUserLabel = $("<label for=\"user" + intId + "\">User:</label>");
-        var newUser = $("<input type=\"text\" class=\"users\" name=\"users\" id=\"user" + intId + "\" />");
-        var removeButton = $("<input type=\"button\" class=\"remove\" value=\"-\" />");
-        removeButton.click(function() {
-            $(this).parent().remove();
+            var intId = $("#the_form div").length + 1;
+            var userWrapper = $("<div class=\"userwrapper\" id=\"field" + intId + "\"/>");
+            var newUserLabel = $("<label class=\"col-sm-2 control-label\" for=\"user" + intId + "\">User:</label>");
+            var newUser = $("<input type=\"text\" class=\"users\" name=\"user" + intId + "\" id=\"user" + intId + "\" />");
+            var newPassLabel = $("<label class=\"col-sm-2 control-label\" for=\"passUser" + intId + "\">Password:</label>");
+            var newPass = $("<input type=\"password\" class=\"passes\" name=\"pass" + intId + "\" id=\"passUser" + intId + "\" />");
+            var removeButton = $("<input type=\"button\" class=\"remove\" value=\"-\" />");
+            removeButton.click(function() {
+                $(this).parent().remove();
+            });
+            userWrapper.append(newUserLabel);
+            userWrapper.append(newUser);
+            userWrapper.append(newPassLabel);
+            userWrapper.append(newPass);
+            userWrapper.append(removeButton);
+            $("#the_form").append(userWrapper);
         });
-        userWrapper.append(newUserLabel);
-        userWrapper.append(newUser);
-        userWrapper.append(removeButton);
-        $("#the_form").append(userWrapper);
-    });
 
-});
+    });
 </script>
 
 <div class="breadcrumbtrail">
@@ -45,8 +56,8 @@ $( document ).ready(function() {
 
 <div class="container">
 
-<form class="form-horizontal" role="form">
-  <div class="form-group">
+<!-- <form class="form-horizontal" id="the_form" role="form">
+  <div class="form-group userwrapper" id='field1'>
     <label for="admin" class="col-sm-2 control-label">Administrator</label>
     <div class="col-lg-4">
       <input type="text" class="form-control" id="admin" placeholder="Admin Username">
@@ -62,6 +73,24 @@ $( document ).ready(function() {
       <button type="submit" class="btn btn-success">Save</button>
     </div>
   </div>
-</form>
+</form> -->
+
+<div class="col-md-10">
+    <form class="form-horizontal" role="form" id="the_form" method="post">
+        <div class='form-group userwrapper' id='field1'>
+            <label for='admin' class="col-sm-2 control-label">Administrator:</label>
+            <input type'text' class='users' id='admin' name='admin'/>
+            <label for='adminPass' class="col-sm-2 control-label">Password:</label>
+            <input type'text' type="password" id='adminPass' class='passes' name='adminPass'/>
+        </div>
+<!--             <input type'text' class='users' name='users'/> -->
+    </form>
+        <div>
+            <input type="button" value="Add a user" class="add" id="add" />
+        </div>
+        <div>
+            <input name="save" id='dhbox_form_submit' type="submit" value="Save" class="btn btn-success" />
+        </div>
+</div>
 
 </div>
