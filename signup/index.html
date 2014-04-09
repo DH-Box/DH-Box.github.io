@@ -3,4 +3,65 @@ layout: default_noheader
 title: Sign Up | DH Box
 ---
 
-<div>testing</div>
+<script type="text/javascript">
+$( document ).ready(function() {
+    // Prevents going to API page, allows showing a success indicator
+    $('#dhbox_form_submit').click(function(e){
+        e.preventDefault();
+        var formData = $('#the_form').serialize();
+        console.log(formData);
+        $.post('http://localhost:8080/dhbox', formData);
+    });
+
+    $(document).on('click', '#add', function(e) {
+        // Adds a new user text box
+        var intId = $("#the_form div").length + 1;
+        var userWrapper = $("<div class=\"userwrapper\" id=\"field" + intId + "\"/>");
+        var newUserLabel = $("<label for=\"user" + intId + "\">User:</label>");
+        var newUser = $("<input type=\"text\" class=\"users\" name=\"users\" id=\"user" + intId + "\" />");
+        var removeButton = $("<input type=\"button\" class=\"remove\" value=\"-\" />");
+        removeButton.click(function() {
+            $(this).parent().remove();
+        });
+        userWrapper.append(newUserLabel);
+        userWrapper.append(newUser);
+        userWrapper.append(removeButton);
+        $("#the_form").append(userWrapper);
+    });
+
+});
+</script>
+
+<div class="breadcrumbtrail">
+  <ol class="breadcrumb">
+    <li><a href="/">Home</a></li>
+    <li class=active>Sign Up</li>
+  </ol>
+</div>
+
+<div style="margin-left:50px"><h1>Sign Up</h1></div>
+
+<br>
+
+<div class="container">
+
+<form class="form-horizontal" role="form">
+  <div class="form-group">
+    <label for="admin" class="col-sm-2 control-label">Administrator</label>
+    <div class="col-lg-4">
+      <input type="text" class="form-control" id="admin" placeholder="Admin Username">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Add a User</button>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-success">Save</button>
+    </div>
+  </div>
+</form>
+
+</div>
