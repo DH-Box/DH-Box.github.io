@@ -20,6 +20,17 @@ my_headerimage_name: Header image by The Pattern Library
 my_search_engine_id_google: 001082080759982814974:iugunkxoumg
 my_email_subscription_url: http://feedburner.google.com/fb/a/mailverify?uri=DHBoxBlog
 
+menus:
+    main:
+    - Welcome: /#welcome
+    - About: 
+        - /about/
+        - The Team: /about/us/
+    - Get Started: 
+        - /get-started/
+    - Connect: 
+        - /contact/
+
 is_github_ribbon_displayed: false
 is_site_author_displayed: true
 is_copyright_displayed: false
