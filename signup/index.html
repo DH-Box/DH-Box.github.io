@@ -11,8 +11,8 @@ $( document ).ready(function() {
         var allUsers = { users: [] };
         $('.userwrapper').each(function () { 
             allUsers.users.push({ 
-            name: $(this).find('[class=users]').val(), 
-            pass: $(this).find('[class=passes]').val(), 
+            name: $(this).find('[what=users]').val(), 
+            pass: $(this).find('[what=passes]').val(), 
             isAdmin: $(this).find('[name=admin]').val() 
             }) 
         });
@@ -26,21 +26,16 @@ $( document ).ready(function() {
             var userWrapper = $("<div class=\"form-group userwrapper\" id=\"field" + intId + "\"/>");
             var userDiv = $("<div class=\"col-lg-4\">");
             var newUserLabel = $("<label class=\" control-label\" for=\"user" + intId + "\">User:</label>");
-            var newUser = $("<input type=\"text\" class=\"users\" name=\"user" + intId + "\" id=\"user" + intId + "\" /></div>");
+            var newUser = $("<input type=\"text\" what=\"users\" class=\"form-control users\" name=\"user" + intId + "\" id=\"user" + intId + "\" /></div>");
             var passDiv = $("<div class=\"col-lg-4\">");
             var newPassLabel = $("<label class=\"control-label\" for=\"passUser" + intId + "\">Password:</label>");
-            var newPass = $("<input type=\"password\" class=\"passes\" name=\"pass" + intId + "\" id=\"passUser" + intId + "\" />");
+            var newPass = $("<input type=\"password\" what=\"passes\" class=\"form-control passes\" name=\"pass" + intId + "\" id=\"passUser" + intId + "\" />");
             var removeButton = $("<input type=\"button\" class=\"remove\" value=\"-\" />");
 
             removeButton.click(function() {
                 $(this).parent().prev().remove();
                 $(this).parent().remove();
             });
-            // userWrapper.append(newUserLabel);
-            // userWrapper.append(newUser);
-            // userWrapper.append(newPassLabel);
-            // userWrapper.append(newPass);
-            // userWrapper.append(removeButton);
             userDiv.append(newUserLabel);
             userDiv.append(newUser);
             passDiv.append(newPassLabel);
@@ -91,11 +86,11 @@ $( document ).ready(function() {
         <div class='form-group userwrapper' id='field1'>
             <div class="col-lg-4">
                 <label for='admin' class="control-label">Administrator:</label>
-                <input type'text' class='users' id='admin' name='admin'/>
+                <input type'text' what="users" class='users form-control' id='admin' name='admin'/>
             </div>
             <div class="col-lg-4">
                 <label for='adminPass' class="control-label">Password:</label>
-                <input type'text' type="password" id='adminPass' class='passes' name='adminPass'/>
+                <input type'text' type="password" what="passes" id='adminPass' class='passes form-control' name='adminPass'/>
             </div>
         </div>
     </form>
