@@ -6,37 +6,48 @@ title: Sign Up | DH Box
 <script type="text/javascript">
 $( document ).ready(function() {
     // Prevents going to API page, allows showing a success indicator
-    $('#dhbox_form_submit').click(function(e){
+    $(document).on('click', '#dhbox_form_submit', function(e){
         e.preventDefault();
-        var stuff = { users: [] };
+        var allUsers = { users: [] };
         $('.userwrapper').each(function () { 
-            stuff.users.push({ 
+            allUsers.users.push({ 
             name: $(this).find('[class=users]').val(), 
             pass: $(this).find('[class=passes]').val(), 
             isAdmin: $(this).find('[name=admin]').val() 
             }) 
         });
-        stuff = JSON.stringify(stuff);
-        console.log(stuff);
-        $.post('http://Localhost:8080/test', stuff);
+        allUsers = JSON.stringify(allUsers);
+        console.log(allUsers);
+        $.post('http://Localhost:8080/test', allUsers);
     });
 
     $(document).on('click', '#add', function(e) {
             var intId = $("#the_form div").length + 1;
-            var userWrapper = $("<div class=\"userwrapper\" id=\"field" + intId + "\"/>");
-            var newUserLabel = $("<label class=\"col-sm-2 control-label\" for=\"user" + intId + "\">User:</label>");
-            var newUser = $("<input type=\"text\" class=\"users\" name=\"user" + intId + "\" id=\"user" + intId + "\" />");
-            var newPassLabel = $("<label class=\"col-sm-2 control-label\" for=\"passUser" + intId + "\">Password:</label>");
+            var userWrapper = $("<div class=\"form-group userwrapper\" id=\"field" + intId + "\"/>");
+            var userDiv = $("<div class=\"col-lg-4\">");
+            var newUserLabel = $("<label class=\" control-label\" for=\"user" + intId + "\">User:</label>");
+            var newUser = $("<input type=\"text\" class=\"users\" name=\"user" + intId + "\" id=\"user" + intId + "\" /></div>");
+            var passDiv = $("<div class=\"col-lg-4\">");
+            var newPassLabel = $("<label class=\"control-label\" for=\"passUser" + intId + "\">Password:</label>");
             var newPass = $("<input type=\"password\" class=\"passes\" name=\"pass" + intId + "\" id=\"passUser" + intId + "\" />");
             var removeButton = $("<input type=\"button\" class=\"remove\" value=\"-\" />");
+
             removeButton.click(function() {
+                $(this).parent().prev().remove();
                 $(this).parent().remove();
             });
-            userWrapper.append(newUserLabel);
-            userWrapper.append(newUser);
-            userWrapper.append(newPassLabel);
-            userWrapper.append(newPass);
-            userWrapper.append(removeButton);
+            // userWrapper.append(newUserLabel);
+            // userWrapper.append(newUser);
+            // userWrapper.append(newPassLabel);
+            // userWrapper.append(newPass);
+            // userWrapper.append(removeButton);
+            userDiv.append(newUserLabel);
+            userDiv.append(newUser);
+            passDiv.append(newPassLabel);
+            passDiv.append(newPass);
+            passDiv.append(removeButton);
+            userWrapper.append(userDiv);
+            userWrapper.append(passDiv);
             $("#the_form").append(userWrapper);
         });
 
@@ -78,15 +89,13 @@ $( document ).ready(function() {
 <div class="col-md-10">
     <form class="form-horizontal" role="form" id="the_form" method="post">
         <div class='form-group userwrapper' id='field1'>
-            <label for='admin' class="col-sm-2 control-label">Administrator:</label>
             <div class="col-lg-4">
+                <label for='admin' class="control-label">Administrator:</label>
                 <input type'text' class='users' id='admin' name='admin'/>
             </div>
             <div class="col-lg-4">
-            <label for='adminPass' class="col-sm-2 control-label">Password:</label>
-            </div>
-            <div class="col-lg-4">
-            <input type'text' type="password" id='adminPass' class='passes' name='adminPass'/>
+                <label for='adminPass' class="control-label">Password:</label>
+                <input type'text' type="password" id='adminPass' class='passes' name='adminPass'/>
             </div>
         </div>
     </form>
