@@ -56,8 +56,8 @@ $( document ).ready(function() {
 
 <div class="container">
 
-<form class="form-horizontal" role="form">
-  <div class="form-group">
+<!-- <form class="form-horizontal" id="the_form" role="form">
+  <div class="form-group userwrapper" id='field1'>
     <label for="admin" class="col-sm-2 control-label">Administrator</label>
     <div class="col-lg-4">
       <input type="text" class="form-control" id="admin" placeholder="Admin Username">
@@ -73,6 +73,23 @@ $( document ).ready(function() {
       <button type="submit" class="btn btn-success">Save</button>
     </div>
   </div>
-</form>
+</form> -->
+
+<div class="col-md-10">
+    <form class="form-horizontal" role="form" id="the_form" method="post">
+        <div class='form-group userwrapper' id='field1'>
+            <label for='admin' class="col-sm-2 control-label">Administrator:</label>
+            <input type'text' class='users' id='admin' name='admin'/>
+            <label for='adminPass' class="col-sm-2 control-label">Password:</label>
+            <input type'text' type="password" id='adminPass' class='passes' name='adminPass'/>
+        </div>
+    </form>
+        <div>
+            <input type="button" value="Add a user" class="add" id="add" />
+        </div>
+        <div>
+            <input name="save" id='dhbox_form_submit' type="submit" value="Save" class="btn btn-success" />
+        </div>
+</div>
 
 </div>
