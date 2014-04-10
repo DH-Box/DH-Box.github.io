@@ -5,32 +5,55 @@ title: Sign Up | DH Box
 
 <script type="text/javascript">
 $( document ).ready(function() {
-    // Prevents going to API page, allows showing a success indicator
-    $(document).on('click', '#dhbox_form_submit', function(e){
-        e.preventDefault();
-        var allUsers = { users: [] };
-        $('.userwrapper').each(function () { 
-            allUsers.users.push({ 
-            name: $(this).find('[what=users]').val(), 
-            pass: $(this).find('[what=passes]').val(), 
-            isAdmin: $(this).find('[name=admin]').val() 
-            }) 
-        });
-        allUsers = JSON.stringify(allUsers);
-        console.log(allUsers);
-        $.post('http://Localhost:8080/test', allUsers);
+    $.validator.setDefaults({
+      // debug: true,
+      // success: "valid"
     });
+    var form = $( "form" );
+    form.validate();
+    $( "#dhbox_form_submit" ).click(function(e) {
+        e.preventDefault();
+        if (form.valid()){
+            var allUsers = { users: [] };
+            $('.userwrapper').each(function () { 
+                allUsers.users.push({ 
+                name: $(this).find('[what=users]').val(), 
+                pass: $(this).find('[what=passes]').val(), 
+                isAdmin: $(this).find('[name=admin]').val() 
+                }) 
+            });
+            allUsers = JSON.stringify(allUsers);
+            console.log(allUsers);
+            $.post('http://Localhost:8080/test', allUsers);
+        }else{
+        console.log('didnt work');
+        }
+    });
+    // $(document).on('click', '#dhbox_form_submit', function(e){
+    //     // e.preventDefault();
+        // var allUsers = { users: [] };
+        // $('.userwrapper').each(function () { 
+        //     allUsers.users.push({ 
+        //     name: $(this).find('[what=users]').val(), 
+        //     pass: $(this).find('[what=passes]').val(), 
+        //     isAdmin: $(this).find('[name=admin]').val() 
+        //     }) 
+        // });
+        // allUsers = JSON.stringify(allUsers);
+        // console.log(allUsers);
+        // $.post('http://Localhost:8080/test', allUsers);
+    // });
 
     $(document).on('click', '#add', function(e) {
             var intId = $("#the_form div").length + 1;
             var userWrapper = $("<div class=\"form-group userwrapper\" id=\"field" + intId + "\"/>");
             var userDiv = $("<div class=\"col-lg-4\">");
             var newUserLabel = $("<label class=\" control-label\" for=\"user" + intId + "\">User:</label>");
-            var newUser = $("<input type=\"text\" what=\"users\" class=\"form-control users\" name=\"user" + intId + "\" id=\"user" + intId + "\" /></div>");
+            var newUser = $("<input type=\"text\" minlength=\"1\" what=\"users\" class=\"form-control users\" name=\"user" + intId + "\" id=\"user" + intId + "\" /></div>");
             var passDiv = $("<div class=\"col-lg-4\">");
             var newPassLabel = $("<label class=\"control-label\" for=\"passUser" + intId + "\">Password:</label>");
-            var newPass = $("<input type=\"password\" what=\"passes\" class=\"form-control passes\" name=\"pass" + intId + "\" id=\"passUser" + intId + "\" />");
-            var removeButton = $("<input type=\"button\" class=\"remove btn btn-danger\" value=\"Remove user &#215;\" />");
+            var newPass = $("<input minlength=\"6\" type=\"password\" what=\"passes\" class=\"form-control passes\" name=\"pass" + intId + "\" id=\"passUser" + intId + "\" />");
+            var removeButton = $("<input type=\"button\" class=\"remove btn btn-danger\" aria-hidden=\"true\" value=\"&times;\"/>");
 
             removeButton.click(function() {
                 $(this).parent().prev().remove();
@@ -62,16 +85,18 @@ $( document ).ready(function() {
 
 <div class="container">
 
-<div class="col-md-10">
+<div class="col-lg-10">
     <form class="form-horizontal" role="form" id="the_form" method="post">
         <div class='form-group userwrapper' id='field1'>
             <div class="col-lg-4">
                 <label for='admin' class="control-label">Administrator:</label>
-                <input type'text' what="users" class='users form-control' id='admin' name='admin'/>
+                <input type'text' what="users" minlength="1" class='users form-control' id='admin' name='admin' required/>
+                <span class="help-block">This is the person with complete control over a new DH Box.</span>
             </div>
             <div class="col-lg-4">
                 <label for='adminPass' class="control-label">Password:</label>
-                <input type'text' type="password" what="passes" id='adminPass' class='passes form-control' name='adminPass'/>
+                <input type'text' type="password" minlength="6" what="passes" id='adminPass' class='passes form-control' name='adminPass' required/>
+                <span class="help-block">Passwords apply for access to: DH Box, Omeka, RStudio.</span>
             </div>
         </div>
     </form>
