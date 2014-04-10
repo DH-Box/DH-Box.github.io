@@ -8,6 +8,7 @@
   display_image: true
   image_name: SteveBW.jpeg
   image_alignment: left
+  is_advisor: false
 
 - name: Gioia Stevens
   role: Project Manager
@@ -19,6 +20,7 @@
   display_image: true
   image_name: GioiaBW.png
   image_alignment: left
+  is_advisor: false
   
 - name: Harlan Kellaway
   role: Developer
@@ -30,6 +32,7 @@
   display_image: true
   image_name: HarlanBW.jpeg
   image_alignment: left
+  is_advisor: false
   
 - name: Cailean Cooney
   role: Outreach 
@@ -41,6 +44,7 @@
   display_image: true
   image_name: CaileanBW.jpeg
   image_alignment: left
+  is_advisor: false
 
 - name: Matt Gold
   role: Academic Advisor, CUNY Graduate Center
@@ -52,6 +56,7 @@
   display_image: false
   image_name:
   image_alignment:
+  is_advisor: true
 
 - name: Dennis Tenen
   role: Academic Advisor, Columbia University
@@ -63,3 +68,4 @@
   display_image: false
   image_name:           
   image_alignment:
+  is_advisor: true

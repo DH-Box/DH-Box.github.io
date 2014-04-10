@@ -1,6 +1,6 @@
 ---
 layout: default_noheader
-title: Sign Up | DH Box
+title: Launch | DH Box
 ---
 
 <script type="text/javascript">
@@ -30,7 +30,7 @@ $( document ).ready(function() {
             var passDiv = $("<div class=\"col-lg-4\">");
             var newPassLabel = $("<label class=\"control-label\" for=\"passUser" + intId + "\">Password:</label>");
             var newPass = $("<input type=\"password\" what=\"passes\" class=\"form-control passes\" name=\"pass" + intId + "\" id=\"passUser" + intId + "\" />");
-            var removeButton = $("<input type=\"button\" class=\"remove btn btn-danger\" value=\"Remove user &#215;\" />");
+            var removeButton = $("<input type=\"button\" class=\"remove btn btn-danger\" value=\"&#215; Remove user\" />");
 
             removeButton.click(function() {
                 $(this).parent().prev().remove();
@@ -52,13 +52,21 @@ $( document ).ready(function() {
 <div class="breadcrumbtrail">
   <ol class="breadcrumb">
     <li><a href="/">Home</a></li>
-    <li class=active>Sign Up</li>
+    <li class=active>Launch</li>
   </ol>
 </div>
 
-<div style="margin-left:50px"><h1>Sign Up</h1></div>
+<div style="margin-left:50px">
+
+<h1>Launch a New DH Box</h1>
 
 <br>
+
+Before launching a new DH Box, please review <a href="https://github.com/DH-Box/dhbox/wiki/Launching-A-New-DH-Box" target="_blank">https://github.com/DH-Box/dhbox/wiki/Launching-A-New-DH-Box</a>
+
+<br><br>
+
+</div>
 
 <div class="container">
 

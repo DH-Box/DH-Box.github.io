@@ -4,12 +4,12 @@
 /*
 /*****************************************************************************/
 
-.nav-pills > menu > level-1 {
-  font-size:400px;
+.advisor > h2 {
+  font-size: x-large;
 }
 
 div:target {
-	padding-top: 50px;
+  padding-top: 50px;
 }
 
 .missingpage {
