@@ -26,6 +26,13 @@ title: The Team | DH Box
           <div class="featurette" id="{{ link_anchor }}">
 
           <br>
+
+              {% if section.is_advisor %}
+
+              <div class="advisor">
+
+              {% endif %}
+
               {% if section.display_image %}
                 <img class="featurette-image img-circle img-responsive pull-{{ section.image_alignment }}" src="{{ site.my_images_subpath }}{{ section.image_name }}" />
 
@@ -55,6 +62,12 @@ title: The Team | DH Box
 
               {% endif %}
 
+            {% if section.is_advisor %}
+
+            </div>
+
+            {% endif %}
+ 
           </div>
 
         {% endfor %}
