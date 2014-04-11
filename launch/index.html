@@ -40,17 +40,18 @@ $( document ).ready(function() {
                     allUsers.users.push({ 
                     name: $(this).find('[what=users]').val(), 
                     pass: $(this).find('[what=passes]').val(), 
-                    isAdmin: $(this).find('[name=admin]').val() 
+                    isAdmin: $(this).find('[what=email]').val() 
                     }) 
                 });
+                allUsers.users = allUsers.users.filter(function(n){ return n != undefined });
                 allUsers = JSON.stringify(allUsers);
                 console.log(allUsers);
-                $.post('http://Localhost:8080/test', allUsers);
+                $.post('http://Localhost:8080/dhbox', allUsers);
               }
             else
               {
               x="!";
-              console.log('didnt work');
+              console.log('didnt go through with it');
               }
         }
     });
@@ -130,6 +131,10 @@ Before launching a new DH Box, please review <a href="https://github.com/DH-Box/
                 <label for='adminPass' class="control-label">Password:</label>
                 <input type'text' type="password" minlength="6" what="passes" id='adminPass' class='passes form-control' name='adminPass' required/>
                 <span class="help-block">Passwords apply for access to: DH Box, Omeka, RStudio.</span>
+            </div>
+            <div class="col-lg-4">
+                <label for='adminEmail' class="control-label">Email:</label>
+                <input type'text' type="text" what="email" id='adminEmail' class='email form-control' name='adminEmail' required/>
             </div>
         </div>
     </form>
