@@ -4,29 +4,55 @@ title: Launch | DH Box
 ---
 
 <script type="text/javascript">
+function warningDialog(form)
+{
+var x;
+var r=confirm("All settings correct?");
+if (r==true)
+  {
+  form.submit();
+  }
+else
+  {
+  x="!";
+  }
+}
 $( document ).ready(function() {
     $.validator.setDefaults({
-      // debug: true,
-      // success: "valid"
+      debug: false,
+      success: "has-success"
     });
     var form = $( "form" );
-    form.validate();
+    form.validate({
+        success: function(label, element) {
+            label.addClass("bg-success").text("Ok!")
+          }
+    });
     $( "#dhbox_form_submit" ).click(function(e) {
         e.preventDefault();
         if (form.valid()){
-            var allUsers = { users: [] };
-            $('.userwrapper').each(function () { 
-                allUsers.users.push({ 
-                name: $(this).find('[what=users]').val(), 
-                pass: $(this).find('[what=passes]').val(), 
-                isAdmin: $(this).find('[name=admin]').val() 
-                }) 
-            });
-            allUsers = JSON.stringify(allUsers);
-            console.log(allUsers);
-            $.post('http://Localhost:8080/test', allUsers);
-        }else{
-        console.log('didnt work');
+            var x;
+            var r=confirm("All settings correct?");
+            if (r==true)
+              {
+                var allUsers = { users: [] };
+                $('.userwrapper').each(function () { 
+                    allUsers.users.push({ 
+                    name: $(this).find('[what=users]').val(), 
+                    pass: $(this).find('[what=passes]').val(), 
+                    isAdmin: $(this).find('[what=email]').val() 
+                    }) 
+                });
+                allUsers.users = allUsers.users.filter(function(n){ return n != undefined });
+                allUsers = JSON.stringify(allUsers);
+                console.log(allUsers);
+                $.post('http://Localhost:8080/dhbox', allUsers);
+              }
+            else
+              {
+              x="!";
+              console.log('didnt go through with it');
+              }
         }
     });
     // $(document).on('click', '#dhbox_form_submit', function(e){
@@ -106,6 +132,10 @@ Before launching a new DH Box, please review <a href="https://github.com/DH-Box/
                 <input type'text' type="password" minlength="6" what="passes" id='adminPass' class='passes form-control' name='adminPass' required/>
                 <span class="help-block">Passwords apply for access to: DH Box, Omeka, RStudio.</span>
             </div>
+            <div class="col-lg-4">
+                <label for='adminEmail' class="control-label">Email:</label>
+                <input type'text' type="text" what="email" id='adminEmail' class='email form-control' name='adminEmail' required/>
+            </div>
         </div>
     </form>
         <div>
@@ -113,7 +143,7 @@ Before launching a new DH Box, please review <a href="https://github.com/DH-Box/
         </div>
         <br />
         <div>
-            <input name="save" id='dhbox_form_submit' type="submit" value="Save" class="btn btn-success" />
+            <input name="save" id='dhbox_form_submit' type="submit" value="Launch!" class="btn btn-success" />
         </div>
 </div>
 
