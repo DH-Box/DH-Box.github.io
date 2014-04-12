@@ -15,6 +15,13 @@ title: Contact | DH Box
 
 <br>
 
-<div style="margin-left:80px;"><h4>Under Construction</h4></div>
+<div style="margin-left:80px;">
+
+  {% assign email_0 = site.my_email | replace: '@', ' [at] ' %}
+  {% assign email = email_0 | replace: '.', ' [dot] ' %}
+
+  <p>Email: <a href="mailto:{{ site.my_email }}?subject=hello from the DH Box website!">{{ email }}</a></p>
+
+</div>
 
 <br><br>
