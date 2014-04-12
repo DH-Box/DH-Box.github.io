@@ -46,7 +46,7 @@ $( document ).ready(function() {
                 allUsers.users = allUsers.users.filter(function(n){ return n != undefined });
                 allUsers = JSON.stringify(allUsers);
                 console.log(allUsers);
-                $.post('http://Localhost:8080/dhbox', allUsers);
+                $.post('http:/54.235.239.235:8080/dhbox', allUsers);
               }
             else
               {
@@ -55,20 +55,6 @@ $( document ).ready(function() {
               }
         }
     });
-    // $(document).on('click', '#dhbox_form_submit', function(e){
-    //     // e.preventDefault();
-        // var allUsers = { users: [] };
-        // $('.userwrapper').each(function () { 
-        //     allUsers.users.push({ 
-        //     name: $(this).find('[what=users]').val(), 
-        //     pass: $(this).find('[what=passes]').val(), 
-        //     isAdmin: $(this).find('[name=admin]').val() 
-        //     }) 
-        // });
-        // allUsers = JSON.stringify(allUsers);
-        // console.log(allUsers);
-        // $.post('http://Localhost:8080/test', allUsers);
-    // });
 
     $(document).on('click', '#add', function(e) {
             var intId = $("#the_form div").length + 1;
