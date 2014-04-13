@@ -4,6 +4,15 @@
 /*
 /*****************************************************************************/
 
+html {
+  font-family: "Aldrich", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Aldrich", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .logo-custom {
   height: 60px;
   width: auto;
