@@ -16,7 +16,11 @@ body {
   text-align: center;
 }
 
-.welcomepage > .container > h2 {
+.headline > .description {
+  font-size: 30px;
+}
+
+.welcomepage > .container > .heading {
   font-size: 40px;
   color: #3C0987;
 }
