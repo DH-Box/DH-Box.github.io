@@ -46,7 +46,7 @@ $( document ).ready(function() {
                 allUsers.users = allUsers.users.filter(function(n){ return n != undefined });
                 allUsers = JSON.stringify(allUsers);
                 console.log(allUsers);
-                $.post('http:/54.235.239.235:8080/dhbox', allUsers);
+                $.post('http://54.235.239.235:8080/dhbox', allUsers);
               }
             else
               {
@@ -93,7 +93,7 @@ $( document ).ready(function() {
 
 <div style="margin-left:50px">
 
-<h1>Launch A New DH Box</h1>
+<h1>Launch a New DH Box</h1>
 
 <br>
 
