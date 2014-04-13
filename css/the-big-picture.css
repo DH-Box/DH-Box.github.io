@@ -1,0 +1,28 @@
+body {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: none;
+}
+
+.full {
+  background: url(/images/cubes.png) repeat;
+  background-position: top;
+  height: auto;
+  display: block;
+  width: 100%;
+}
+
+.jumbotron {
+  text-align: center;
+}
+
+.welcomepage > .container > h2 {
+  font-size: 40px;
+  color: #3C0987;
+}
+
+.welcomepage > .container > hr {
+  border: 0;
+  border-bottom: 3px dashed #333;
+  background: #999;
+}
