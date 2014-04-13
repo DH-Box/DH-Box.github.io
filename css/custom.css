@@ -144,3 +144,8 @@ div:target {
   width: 32px;
   height: 32px;
 }
+
+.face {
+  width: 200px;
+  height: auto;
+}
