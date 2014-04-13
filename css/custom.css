@@ -15,7 +15,7 @@
 }
 
 div:target {
-  padding-top: 50px;
+  padding-top: 60px;
 }
 
 .missingpage {
@@ -42,8 +42,7 @@ div:target {
 }
 
 .breadcrumbtrail {
-  margin-left: 50px;
-  margin-right: 50px;
+  text-align: center;
 }
 
 .post {

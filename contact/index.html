@@ -1,6 +1,7 @@
 ---
-layout: default_noheader
+layout: default
 title: Contact | DH Box
+has_header: false
 ---
 <div class="breadcrumbtrail">
 
@@ -11,11 +12,11 @@ title: Contact | DH Box
 
 </div>
 
-<div style="margin-left:50px"><h1>Contact</h1></div>
+<div class="container">
 
-<br>
+  <h1>Contact</h1>
 
-<div style="margin-left:80px;">
+  <br>
 
   {% assign email_0 = site.my_email | replace: '@', ' [at] ' %}
   {% assign email = email_0 | replace: '.', ' [dot] ' %}
