@@ -7,7 +7,7 @@
 html {
   font-family: "Aldrich", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 body {
@@ -19,6 +19,7 @@ hr {
   border: 0;
   border-bottom: 3px dashed #333;
   background: #999;
+  margin-right: 50px;
 }
 
 .logo-custom {
@@ -125,7 +126,7 @@ div:target {
 }
 
 .credits {
-   font-size: 85%;
+   font-size: 65%;
 }
 
 .searchdescription {
