@@ -13,7 +13,7 @@ has_header: false
           </ol>
         </div>
 
-        <h1>The Team</h1>
+        <h1>The DH Box Team</h1>
 
         <!-- START THE FEATURETTES -->
 
@@ -27,6 +27,10 @@ has_header: false
           <div class="featurette" id="{{ link_anchor }}">
 
           <br>
+
+          <table>
+            <tr>
+              <td>
 
               {% if section.is_advisor %}
 
@@ -44,30 +48,33 @@ has_header: false
                 <span class="text-muted">{{ section.role }}</span>
               </h2>
 
-              <div class="lead">
-                <p>
                   {{ section.social_media }}
+               </td>
+             </tr>
+             <tr>
+               <td>                  
                   <br><br>
                   {{ section.description }}
-                </p>
 
-               {% if section.display_why %}
+                  {% if section.display_why %}
 
-                <br><br>
+                    <br><br>
 
-                 <p class="why">{{ site.my_aboutpage_why_label }}</p>
+                    <p class="why">{{ site.my_aboutpage_why_label }}</p>
 
-                 <p>{{ section.why }}</p>
+                    <p>{{ section.why }}</p>
 
-                <br><br>
+                    <br><br>
 
-              {% endif %}
+                  {% endif %}
 
             {% if section.is_advisor %}
 
-            </div>
 
             {% endif %}
+            </td>
+          </tr>
+        </table>
  
           </div>
 

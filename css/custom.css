@@ -7,10 +7,18 @@
 html {
   font-family: "Aldrich", sans-serif;
   font-weight: 400;
+  font-size: 16px;
 }
 
 body {
   font-family: "Aldrich", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 125%;
+}
+
+hr {
+  border: 0;
+  border-bottom: 3px dashed #333;
+  background: #999;
 }
 
 .logo-custom {
@@ -41,7 +49,7 @@ div:target {
   margin-left: 50px;
 }
 
-.lead > .why {
+.why {
   font-weight: bold;
 }
 
