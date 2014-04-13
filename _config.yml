@@ -8,6 +8,7 @@ blog_description: has a blog
 timezone: America/New_York
 
 my_email: hello@dhbox.org
+my_documentation_url: https://github.com/DH-Box/dhbox/wiki
 my_site_author_name: Harlan Kellaway
 my_site_author_url: http://hkellaway.github.io
 my_license: Licensed under Apache License v2.0

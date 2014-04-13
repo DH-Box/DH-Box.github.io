@@ -20,5 +20,5 @@ task :ship do
   system "git commit -am '#{message}'"
   system "git pull"
   system "git push"
-  puts "Pushed latest to GitHub."
+  puts "GitHub push attempt complete."
 end
