@@ -4,6 +4,12 @@
 /*
 /*****************************************************************************/
 
+.logo-custom {
+  height: 60px;
+  width: auto;
+  border: 2px solid white;
+}
+
 .advisor > h2 {
   font-size: x-large;
 }

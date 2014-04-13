@@ -68,6 +68,7 @@ paginate_path: "blog/page:num"
 
 my_blog_subpath: /blog/
 my_images_subpath: /images/
+my_logo_filename: logo.png
 my_images_filetype: .png
 
 my_aboutpage_why_label: Why DH Box?
