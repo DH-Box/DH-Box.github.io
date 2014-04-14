@@ -46,8 +46,9 @@ $( document ).ready(function() {
                 allUsers.users = allUsers.users.filter(function(n){ return n != undefined });
                 allUsers = JSON.stringify(allUsers);
                 console.log(allUsers);
-                $.post('http://54.235.239.235:8080/dhbox', allUsers);
-                window.location.replace("/thank-you/");
+                $.post('http://54.83.206.139:8080/dhbox', allUsers);
+                setTimeout(function(){window.location.replace("/thank-you/");},1000);
+
               }
             else
               {
