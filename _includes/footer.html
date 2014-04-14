@@ -4,13 +4,21 @@
 
    {% if site.is_footermenu_displayed %}
 
-     <div class="footermenu">
+     <div class="menu">
 
        {% include /widgets/footermenu.html %}
 
      </div>
 
    {% endif %}
+
+   <div class="backtotop">
+ 
+     <a href="{{ page.id }}#">Back to Top</a> &uarr;
+
+   </div>
+
+   <br />
 
    <div class="socialmedia">
 
@@ -26,15 +34,7 @@
 
    </div>
 
-   <br />
-
-   <div class="backtotop">
- 
-     <a href="{{ page.id }}#">Back to Top</a> &uarr;
-
-   </div>
-
-   <br />
+   <br>
 
    <div class="credits">
 

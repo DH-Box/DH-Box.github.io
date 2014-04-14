@@ -8,6 +8,7 @@ blog_description: has a blog
 timezone: America/New_York
 
 my_email: hello@dhbox.org
+my_twitter_handle: DH_Box
 my_documentation_url: https://github.com/DH-Box/dhbox/wiki
 my_site_author_name: Harlan Kellaway
 my_site_author_url: http://hkellaway.github.io
@@ -42,13 +43,13 @@ is_blog_postshare_displayed: true
 is_socialmedia_widget_displayed: true
 is_search_displayed: true
 is_subscribe_displayed: true
-is_warning_displayed: true
+is_warning_displayed: false
 is_footermenu_displayed: true
 
 my_label_toggle_navigation: Toggle Navigation
-my_label_findoutmore: Find Out More
+my_label_findoutmore: Get Started
 my_label_subscribebutton: Subscribe <i class="icon icon-envelope"></i>
-my_label_socialmedia: Connect&#58;
+my_label_socialmedia: Connect
 my_delimiter_socialmedia: //
 my_label_blog_post_list: Blog Posts
 my_label_post_share: Share&#58;&nbsp;
@@ -66,7 +67,7 @@ permalink: /:year/:month/:day/:title
 paginate: 5
 paginate_path: "blog/page:num"
 
-my_blog_subpath: /blog/
+my_blog_url: http://dhbox.commons.gc.cuny.edu
 my_images_subpath: /images/
 my_logo_filename: logo.png
 my_images_filetype: .png

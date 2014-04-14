@@ -8,12 +8,12 @@
           {% assign urlToUse = service.url_base | append: handleToUse %}
           {% assign serviceDowncase = service.name | downcase %}
 
+            {{ site.my_delimiter_socialmedia }}
+            
             <a href="{{ urlToUse }}" target="_blank">
               <i class="icon icon-{{ serviceDowncase }}"></i>
               <span>{{ service.name }}</span>
             </a>
-
-            {{ site.my_delimiter_socialmedia }}
 
           {% endif %}
 

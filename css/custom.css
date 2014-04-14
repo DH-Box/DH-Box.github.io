@@ -61,6 +61,7 @@ div:target {
 
 .breadcrumbtrail {
   text-align: center;
+  margin-right: 50px;
 }
 
 .post {
@@ -123,6 +124,10 @@ div:target {
 
 .footer .socialmedia {
   text-align: right;
+}
+
+.footer > .menu {
+  text-align: left;
 }
 
 .credits {

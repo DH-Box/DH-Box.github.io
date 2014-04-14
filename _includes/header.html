@@ -62,26 +62,11 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
 
-                   {% for section in site.data.sections %}
+                   {% for section in site.data.headermenu %}
 
-                     <li>
-
-                     {% if section.generate_section %}
-
-                       {% assign stripped_spaces =  section.link_label | remove: ' ' %}
-                       {% assign link_anchor = stripped_spaces | downcase  %}
-
-                       <a href="/#{{ link_anchor }}">{{ section.link_label }}</a>
-
-                     {% else %}
-
-                       <a href="{{ section.url }}">{{ section.link_label }}</a>
-
-                     {% endif %}
+                       <li><a href="{{ section.link_url }}">{{ section.link_label }}</a></li>
 
                    {% endfor %}
-
-                   </li>
 
                 </ul>
             </div>
