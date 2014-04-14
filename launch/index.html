@@ -47,7 +47,8 @@ $( document ).ready(function() {
                 allUsers = JSON.stringify(allUsers);
                 console.log(allUsers);
                 $.post('http://54.83.206.139:8080/dhbox', allUsers);
-                // window.location.replace("/thank-you/");
+                setTimeout(function(){window.location.replace("/thank-you/");},1000);
+
               }
             else
               {
