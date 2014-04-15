@@ -17,6 +17,7 @@
       body { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 20px; }
       .full { background-image: url('http://dhbox.org/images/background.png') repeat; background-color: #FFFFFF; background-position: top; height: auto; display: block; width: 100%; }
       .jumbotron { text-align: center; }
+      .btn-custom { padding: 14px 22px; font-size: 17px; line-height: normal; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; }
       .headline > .description { font-size: 30px; }
       .welcomepage > .container > .heading { font-size: 40px; color: #3C0987; }
       .welcomepage > .container > hr { border: 0; border-bottom: 3px dashed #333; background: #999; }
@@ -39,8 +40,10 @@
       <h1>
         Welcome to Your New DH Box
         <br>
-        <span class="glyphicon glyphicon-gift"></span> 
+        <span class="glyphicon glyphicon-gift"></span>
       </h1> 
+      <br>
+      <h4 class="highlight">This DH Box Expires on: [expiration date]</h4>
     </div>
 
     <div class="container">
@@ -69,6 +72,8 @@
 
       <div class="heading"><span class="glyphicon glyphicon-cog"></span> Use Your Tools</div>
 
+      <br>
+
       <p>Don't forget to read the documentation.</p>
 
       <br>
@@ -83,32 +88,32 @@
         </thead>  
         <tbody>  
           <tr>  
-            <td><a href="http://{{ inventory_hostname }}:4200" class="btn btn-info btn-block">Bash Shell</a></td>  
+            <td><a href="http://{{ inventory_hostname }}:4200" class="btn btn-info btn-block btn-custom">Bash Shell</a></td>  
             <td><a href="http://{{ inventory_hostname }}:4200">http://{{ inventory_hostname }}:4200</a></td> 
             <td><a href="https://github.com/DH-Box/dhbox/wiki/Bash-shell" target="_blank">https://github.com/DH-Box/dhbox/wiki/Bash-shell</a></td>
           </tr>
           <tr>
-            <td><a class="btn btn-default btn-block">IPython</a></td>
+            <td><a class="btn btn-default btn-block btn-custom">IPython</a></td>
             <td>N/A (Accessed via Bash shell)</td>
             <td><a href="https://github.com/DH-Box/dhbox/wiki/IPython" target="_blank">https://github.com/DH-Box/dhbox/wiki/IPython</a></td>
           </tr> 
           <tr>
-            <td><a class="btn btn-default btn-block">MALLET</a></td>
+            <td><a class="btn btn-default btn-block btn-custom">MALLET</a></td>
             <td>TBD</td>
             <td><a href="https://github.com/DH-Box/dhbox/wiki/MALLET" target="_blank">https://github.com/DH-Box/dhbox/wiki/MALLET</a></td>
           </tr> 
           <tr>
-            <td><a class="btn btn-default btn-block">NLTK</a></td>
+            <td><a class="btn btn-default btn-block btn-custom">NLTK</a></td>
             <td>N/A (Accessed via Bash shell)</td>
             <td><a href="https://github.com/DH-Box/dhbox/wiki/NLTK" target="_blank">https://github.com/DH-Box/dhbox/wiki/NLTK</a></td>
           </tr>
           <tr>  
-            <td><a href="http://{{ inventory_hostname }}:8080/admin" class="btn btn-info btn-block">Omeka</a></td>
+            <td><a href="http://{{ inventory_hostname }}:8080/admin" class="btn btn-info btn-block btn-custom">Omeka</a></td>
             <td><a href="http://{{ inventory_hostname }}:8080/admin">http://{{ inventory_hostname }}:8080/admin</a></td>
             <td><a href="https://github.com/DH-Box/dhbox/wiki/Omeka" target="_blank">https://github.com/DH-Box/dhbox/wiki/Omeka</a></td>
           </tr>  
           <tr>  
-            <td><a href="http://{{ inventory_hostname }}:8787" class="btn btn-info btn-block">R Studio</a></td>
+            <td><a href="http://{{ inventory_hostname }}:8787" class="btn btn-info btn-block btn-custom">R Studio</a></td>
             <td><a href="http://{{ inventory_hostname }}:8787">http://{{ inventory_hostname }}:8787</a></td>
             <td><a href="https://github.com/DH-Box/dhbox/wiki/R-Studio" target="_blank">https://github.com/DH-Box/dhbox/wiki/R-Studio</a></td>  
           </tr>  
@@ -121,7 +126,7 @@
 
       <br>
 
-      <p><div class="highlight">Your DH Box expires on [EXPIRATION DATE].</div></p>
+      <p><div class="highlight">Your DH Box expires on [expiration date].</div></p>
 
       <br>
 
