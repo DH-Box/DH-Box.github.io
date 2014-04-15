@@ -14,8 +14,7 @@
 
     <!-- Custom CSS -->
     <style type="text/css" media="all">
-      body { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; }
-      p { font-size: 20px; }
+      body { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 20px; }
       .full { background-image: url('http://dhbox.org/images/background.png') repeat; background-color: #FFFFFF; background-position: top; height: auto; display: block; width: 100%; }
       .jumbotron { text-align: center; }
       .headline > .description { font-size: 30px; }
@@ -37,7 +36,11 @@
     <div class="jumbotron">
       <img src="http://dhbox.org/images/logo.png" alt="DH Box logo" height="100px" width="auto" /></h1>
       <br>
-      <h1>Welcome to Your New DH Box</h1> 
+      <h1>
+        Welcome to Your New DH Box
+        <br>
+        <span class="glyphicon glyphicon-gift"></span> 
+      </h1> 
     </div>
 
     <div class="container">
@@ -87,17 +90,17 @@
           <tr>
             <td><a class="btn btn-default btn-block">IPython</a></td>
             <td>N/A (Accessed via Bash shell)</td>
-            <td><a href="https://github.com/DH-Box/dhbox/wiki/Bash-shell" target="_blank">https://github.com/DH-Box/dhbox/wiki/IPython</a></td>
+            <td><a href="https://github.com/DH-Box/dhbox/wiki/IPython" target="_blank">https://github.com/DH-Box/dhbox/wiki/IPython</a></td>
           </tr> 
           <tr>
             <td><a class="btn btn-default btn-block">MALLET</a></td>
             <td>TBD</td>
-            <td><a href="https://github.com/DH-Box/dhbox/wiki/Bash-shell" target="_blank">https://github.com/DH-Box/dhbox/wiki/MALLET</a></td>
+            <td><a href="https://github.com/DH-Box/dhbox/wiki/MALLET" target="_blank">https://github.com/DH-Box/dhbox/wiki/MALLET</a></td>
           </tr> 
           <tr>
             <td><a class="btn btn-default btn-block">NLTK</a></td>
             <td>N/A (Accessed via Bash shell)</td>
-            <td><a href="https://github.com/DH-Box/dhbox/wiki/Bash-shell" target="_blank">https://github.com/DH-Box/dhbox/wiki/NLTK</a></td>
+            <td><a href="https://github.com/DH-Box/dhbox/wiki/NLTK" target="_blank">https://github.com/DH-Box/dhbox/wiki/NLTK</a></td>
           </tr>
           <tr>  
             <td><a href="http://{{ inventory_hostname }}:8080/admin" class="btn btn-info btn-block">Omeka</a></td>
@@ -114,11 +117,15 @@
 
       <br><br>
 
-      <div class="heading"><span class="glyphicon glyphicon-gift"></span> Enjoy It While It Lasts</div>
+      <div class="heading"><span class="glyphicon glyphicon-time"></span> Enjoy It While It Lasts</div>
 
       <br>
 
-      <p>Your DH Box expires on [EXPIRATION DATE]. Make sure to export any work you've done before then!</p>
+      <p><div class="highlight">Your DH Box expires on [EXPIRATION DATE].</div></p>
+
+      <br>
+
+      <p>Make sure to export any work you've done before then!</p>
 
       <br><br>
 
