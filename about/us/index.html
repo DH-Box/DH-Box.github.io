@@ -4,20 +4,19 @@ title: Our Team | DH Box
 has_header: false
 ---
 
-        <div class="breadcrumbtrail">
+<div class="breadcrumbtrail">
 
-          <ol class="breadcrumb">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li class=active>Us</li>
-          </ol>
-        </div>
+  <ol class="breadcrumb">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+    <li class=active>Us</li>
+  </ol>
+</div>
+
+<div class="container">
 
         <h1>Our Team</h1>
 
-        <!-- START THE FEATURETTES -->
-
-        <hr class="featurette-divider">
 
         {% for section in site.data.people %}
 
@@ -79,5 +78,7 @@ has_header: false
           </div>
 
         {% endfor %}
+
+</div>
 
         <!-- END THE FEATURETTES -->
