@@ -46,7 +46,7 @@
   image_alignment: left
   is_advisor: false
 
-- name: Matt Gold
+- name: Matthew K. Gold
   role: Academic Advisor, CUNY Graduate Center
   anchor: matt
   social_media: <a href="http://cuny.is/mkgold" target="_blank">cuny.is/mkgold</a>
@@ -61,7 +61,7 @@
 - name: Dennis Tenen
   role: Academic Advisor, Columbia University
   anchor: dennis
-  social_media: <a href="http://english.columbia.edu/people/profile/453" target="_blank">Columbia University Profile</a>
+  social_media: <a href="http://dennistenen.com" target="_blank">dennistenen.com</a>
   description: 
   display_why: false
   why:
