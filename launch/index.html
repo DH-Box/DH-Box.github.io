@@ -40,7 +40,7 @@ $( document ).ready(function() {
                     allUsers.users.push({ 
                     name: $(this).find('[what=users]').val(), 
                     pass: $(this).find('[what=passes]').val(), 
-                    isAdmin: $(this).find('[what=email]').val() 
+                    email: $(this).find('[what=email]').val() 
                     }) 
                 });
                 allUsers.users = allUsers.users.filter(function(n){ return n != undefined });
