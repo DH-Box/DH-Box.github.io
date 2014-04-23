@@ -27,8 +27,9 @@
     <!-- Custom CSS for this Site -->
     <link href="/css/custom.css" rel="stylesheet">
 
-    <!-- Custom font for this Site -->
+    <!-- Custom fonts for this Site -->
     <link href='http://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
     <!-- JavaScript -->
     <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
@@ -95,12 +96,12 @@
 
               {% endif %}
 
-                <h1>{{ headingToUse }}</h1>
-                <h2>{{ subheadingToUse }}</h2>
+                <h1 class="dhbox">{{ headingToUse }}</h1>
+                <h2 class="dhbox">{{ subheadingToUse }}</h2>
 
                 {% if site.is_socialmedia_widget_displayed %}
 
-                  <h3>{% include /widgets/socialmedia.html %}</h3>
+                  <h3 class="dhbox">{% include /widgets/socialmedia.html %}</h3>
 
                 {% endif %}
 

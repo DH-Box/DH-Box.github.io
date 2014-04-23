@@ -5,14 +5,18 @@
 /*****************************************************************************/
 
 html {
-  font-family: "Aldrich", sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 15px;
 }
 
 body {
-  font-family: "Aldrich", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 125%;
+}
+
+.dhbox {
+  font-family: "Aldrich", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 hr {

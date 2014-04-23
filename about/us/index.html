@@ -15,7 +15,7 @@ has_header: false
 
 <div class="container">
 
-        <h1>Our Team</h1>
+        <h1 class="dhbox">Our Team</h1>
 
 
         {% for section in site.data.people %}
@@ -42,9 +42,9 @@ has_header: false
 
               {% endif %}
 
-              <h2 class="featurette-heading">{{ section.name }}
+              <h2 class="featurette-heading dhbox">{{ section.name }}
                 <br>
-                <span class="text-muted">{{ section.role }}</span>
+                <span class="text-muted dhbox">{{ section.role }}</span>
               </h2>
 
                   {{ section.social_media }}
