@@ -1,11 +1,11 @@
-- link_label: Get Started
-  link_url: /get-started/
-
 - link_label: About
   link_url: /about
-
+  
 - link_label: Our Team
   link_url: /about/us
 
 - link_label: Contact
   link_url: /contact
+
+- link_label: Get Started
+  link_url: /get-started/
