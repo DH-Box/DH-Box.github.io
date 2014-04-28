@@ -2,8 +2,8 @@
   generate_section: true
   heading_start: Ready to stop installing & start exploring?
   heading_end: Welcome to DH Box.
-  display_findoutmore_url: true
-  url: /get-started
+  display_findoutmore_url: false
+  url: /about
   description: DH Box is a Linux computer in the cloud. It contains popular Digital Humanities inquiry software- pre-installed and configured so users can move straight to exploring without sacrificing time and energy on software installations.
   image_url: /images/dhbox_shell.png
   image_alignment: right
