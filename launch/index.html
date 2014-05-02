@@ -102,21 +102,9 @@ $( document ).ready(function() {
 
 <h3>Congratulations! You're about to become the owner of a brand new DH Box.</h3>
 
-<br><br>
+<br>
 
-<span class="glyphicon glyphicon-user"></span> First, enter an <strong>Administrator</strong> username  and <strong>Password</strong> and your <strong>Email Address</strong>. 
-
-<br><br>
-
-<span class="glyphicon glyphicon-plus-sign"></span> Second, if other people are to be able to access this DH Box (for example, students), click the <strong>Add a user</strong> button for each  and fill out additional <strong>Username</strong>s and <strong>Password</strong>s.
-
-<br><br>
-
-<span class="glyphicon glyphicon-ok-sign"></span> Now, you're ready to <strong>Launch!</strong>
-
-<br><br>
-
-<span class="glyphicon glyphicon-envelope"></span> Wait for an email confirmation in your Inbox and enjoy.
+Just fill out the information below then click <strong>Launch</strong>.
 
 <br><br>
 
@@ -128,9 +116,9 @@ $( document ).ready(function() {
     <form class="form-horizontal" role="form" id="the_form" method="post">
         <div class='form-group userwrapper' id='field1'>
             <div class="col-lg-4">
-                <label for='admin' class="control-label">Administrator:</label>
+                <label for='admin' class="control-label">Your Username:</label>
                 <input type'text' what="users" minlength="1" class='users form-control' id='admin' name='admin' required/>
-                <span class="help-block">This is the person with complete control over a new DH Box.</span>
+                <span class="help-block">This is the user with complete control over a new DH Box.</span>
             </div>
             <div class="col-lg-4">
                 <label for='adminPass' class="control-label">Password:</label>
@@ -144,11 +132,16 @@ $( document ).ready(function() {
         </div>
     </form>
         <div>
-            <input type="button" value="Add a user" class="add btn btn-info" id="add" />
+
+            Should anyone else - such as students - be able to access this DH Box?
+            
+            <br>
+           
+           <button type="submit" class="add btn btn-info" id="add"><span class="glyphicon glyphicon-user"></span> Add a user</button>
         </div>
         <br />
         <div>
-            <input name="save" id='dhbox_form_submit' type="submit" value="Launch!" class="btn btn-success" />
+            <input name="save" id='dhbox_form_submit' type="submit" value="Launch" class="btn btn-success btn-lg" />
         </div>
 </div>
 
