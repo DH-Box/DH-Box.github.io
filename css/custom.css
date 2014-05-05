@@ -10,6 +10,11 @@ html {
   font-size: 15px;
 }
 
+p {
+  margin-left: 0px;
+  margin-right: 150px;
+}
+	
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 125%;
