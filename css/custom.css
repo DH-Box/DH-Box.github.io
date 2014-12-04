@@ -38,7 +38,7 @@ hr {
 }
 
 .advisor > h2 {
-  font-size: x-large;
+  font-size: 20px;
 }
 
 div:target {
@@ -154,7 +154,7 @@ div:target {
   height: 32px;
 }
 
-.face {
+/* .face {
   width: 200px;
   height: auto;
-}
+} */

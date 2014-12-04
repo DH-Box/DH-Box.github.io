@@ -25,9 +25,7 @@ has_header: false
 
           <div class="featurette" id="{{ link_anchor }}">
 
-          <br>
-
-          <table>
+    
             <tr>
               <td>
 
@@ -43,7 +41,6 @@ has_header: false
               {% endif %}
 
               <h2 class="featurette-heading dhbox">{{ section.name }}
-                <br>
                 <span class="text-muted dhbox">{{ section.role }}</span>
               </h2>
 
@@ -52,12 +49,10 @@ has_header: false
              </tr>
              <tr>
                <td>                  
-                  <br><br>
                   {{ section.description }}
 
                   {% if section.display_why %}
 
-                    <br><br>
 
                     <p class="why">{{ site.my_aboutpage_why_label }}</p>
 
@@ -65,20 +60,19 @@ has_header: false
 
                     <br><br>
 
-                  {% endif %}
+                {% endif %}
 
             {% if section.is_advisor %}
 
 
             {% endif %}
             </td>
-          </tr>
-        </table>
- 
+          </tr> 
           </div>
 
         {% endfor %}
 
 </div>
+  
 
         <!-- END THE FEATURETTES -->
