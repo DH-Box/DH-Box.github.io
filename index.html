@@ -1,10 +1,154 @@
----
-layout: homepage_generated
-title:  Welcome | DH Box
-has_header: true
----
 
-<!-- If you would like this page to be fully generated, set 'layout' to 'homepage__generated' -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta name="description" content="Reference Desk Statistics">
+    <meta name="author" content="SZ">
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <title>DH Box</title>
 
-<!-- If you would like to specify the content of the homepage, set the layout to 'homepage_cust' -->
+    <link rel="stylesheet" href="css/dhbox.css">
 
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script src="js/dhbox.js"></script>
+
+    
+
+<body class=>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand dhbox-logo" href="/">&gt; <span>DH</span>box</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/about">About</a></li>
+                <li><a href="/our_team">Our Team</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <!-- <li><a href="/news">News</a></li> -->
+                <!-- <li><a href="/signup">Sign Up</a></li> -->
+            </ul>
+        
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</nav>
+<br/>
+<div class="container">
+
+    
+    
+    
+
+    
+<div class="dhbox-home">
+    <div class="row dhbox-welcome">
+        <div class="col-xs-12 text-center">
+        <br/><br/>
+            <img class="featurette-image img-responsive center-block"
+                 src="images/dhbox_shell.png">
+            <h1>CUNY Graduate Center</h1>
+
+            <p class="lead">Setting up an environment for digital humanities computational work can be time-consuming
+                and difficult. DH Box addresses this problem by streamlining installation processes and providing a
+                <strong>digital humanities laboratory in the cloud</strong> through simple sign-in via a web browser.</p>
+        </div>
+        <!-- END THE FEATURETTES -->
+    </div>
+    
+    <div class="row dhbox-get">
+        <!-- <div class="col-md-4 col-md-offset-2 col-xs-12 text-center">
+            <label for="start-demo">Give it a try:</label><br/>
+            <a id="start-demo" class="btn btn-huge" href="/demo"><span>Start Hour-Long Demo</span></a>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+            <label for="signup">Use it for your workshop:</label><br/>
+            <a id="signup" class="btn btn-huge" href="/signup"><span>Sign Up</span></a>
+        </div> -->
+        <div class="col-md-4 col-md-offset-4 col-xs-12 text-center">
+            <label for="get-dhbox">Get the source code:</label><br/>
+            <a id="get-dhbox" class="btn btn-huge" href="https://github.com/DH-Box/dhbox"><span>Download from GitHub</span></a>
+        </div>
+    </div>
+    
+    <div class="dhbox-tools">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <p>The DH Box platform comes pre-equipped with <strong>essential DH tools</strong>:</p>
+
+                <p>IPython, RStudio, Omeka, and NLTK.</p>
+            </div>
+        </div>
+        <div class="row logos">
+            <div class="col-xs-3">
+                <img src="images/omeka-logo.gif" class="pull-left" alt="omeka"/>
+            </div>
+            <div class="col-xs-6">
+                <img src="images/ipython-logo.png" class="center-block" alt="ipython"/>
+            </div>
+            <div class="col-xs-3">
+                <img src="images/rstudio-logo.png" class="pull-right" alt="rstudio"/>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="dhbox-partners">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <p>DH Box is created in partnership with:</p>
+            </div>
+        </div>
+        <div class="row logos">
+            <div class="col-xs-2">
+                <img src="images/britishlibrary-logo.gif" class="pull-left" alt="British Library"/>
+            </div>
+            <div class="col-xs-2">
+                <img src="images/cuny-logo.jpg" class="pull-left" alt="CUNY"/>
+            </div>
+            <div class="col-xs-2">
+                <img src="images/nypl-logo.jpg" class="center-block" alt="NYPL"/>
+            </div>
+            <div class="col-xs-2">
+                <img src="images/hilt-logo.png" class="pull-right" alt="HILT"/>
+            </div>
+            <div class="col-xs-2">
+                <img src="images/dhsi-logo.jpg" class="pull-right" alt="dhsi.org" />
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<div class="footer">
+</div>
+    <div id="progress-modal" class="modal fade" tabindex="-1" role="dialog"
+         aria-labelledby="modalTitle">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header modal-header-primary">
+                    <h4 id="modalTitle" class="modal-title">Building your Demo DH Box</h4>
+                </div>
+                <div id='inside-modal' class="modal-body">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60"
+                             aria-valuemin="0"
+                             aria-valuemax="100" style="width: 60%;">
+                            <span class="sr-only">60% Complete</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
